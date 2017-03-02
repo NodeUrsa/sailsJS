@@ -1,0 +1,43 @@
+<div class="modal box-mode worker">
+    <div class="grid span9 centered">
+    	
+    	<div class="row center"><%=(status == "remove")?"Remove Item Mode":"Box Mode Active"%></div>
+        <div class="row center">
+            <div class="span6 centered">
+                <div class="span3">Box Number:</div>
+                <div class="span3"><input type="text" class="span3" name="boxNumber" value="<%=boxNumber%>" disabled/></div>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="span9 centered" style="margin-top: 10px!important; margin-bottom: 10px!important;">
+                <div class="button-set">
+                    <button class="disable" name="tobeScanned"  style="width: 340px;
+                                                                        margin-right: 10px;
+                                                                        font-size: 34px!important;">Items to be Scanned</button>
+                    <button class="disable" name="scanned" style="width: 340px;">Items Scanned</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span2">
+                <div class="tile <%=(status == "remove")?"remove-all":"remove"%>"><div><%=(status == "remove")?"Remove All Items":"Remove Item"%></div></div>
+                <div class="tile exit"><div>Exit Mode</div></div>
+                <div class="tile disable dimensions"><div>Box Dim</div></div>
+            </div>
+            <div class="span7">
+                <div class="row table-title">
+                    Available<%=(status == "remove")?" Items to be removed":""%>:
+                </div>
+                <div class="available"></div>
+
+                <div class="row table-title">
+                    <%=(status == "remove")?"Removed Items":"Assigned"%>:
+                </div>
+                <div class="assigned"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row center">
+        Box Location
+    </div> -->
+</div>

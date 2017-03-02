@@ -1,0 +1,68 @@
+<div class="modal worker">
+    <div class="header big">
+        <div class="row">
+            <div class="column">
+                <div><b>Bill to:</b> <%=model.customerNumber%></div>
+                <div><%=model.customerName%></div>
+                <div>
+                    <%=model.billToAddress1 || model.billToAddress2 || model.billToAddress3 || model.billToAddress4%></br>
+                    <%=model.billToCity%><%=(model.billToState)? ', '+model.billToState:''%><%=(model.billToZip)? ', '+model.billToZip:''%>
+                </div>
+            </div>
+            <div class="column">
+                <div><b>Ship to:</b> <%=model.customerNumber%></div>
+                <div><%=model.customerName%></div>
+                <div>
+                    <%=model.shipToAddress1 || model.shipToAddress2 || model.shipToAddress3 || model.shipToAddress4%></br>
+                    <%=model.shipToCity%><%=(model.shipToState)? ', '+model.shipToState:''%><%=(model.shipToZip)? ', '+model.shipToZip:''%>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column">
+                    <div><b>Order#</b> <%= model.orderNumber %></div>
+                    <div><b>Order Date:</b> <%= moment(model.orderDate).format('MM/DD/YY') %></div>
+                </div>
+                <div class="column">
+                    <div><b>Delivery#</b> <%= model.deliveryNum %></div>
+                    <div><b>Due Date:</b> <%= moment(model.dueDate).format('MM/DD/YY') %></div>
+                </div>
+                <!-- Igor, please fix this inline style (move to less and find a better way of doing this) -->
+                <div style="position:relative;top:-5px;"><b>Release:</b> <%= moment(model.releasedDate).format('MM/DD/YY hh:mm A') %></div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div><b>Po Number:</b> <%= model.poNum%></div>
+                <div><b>Created by:</b> <%= model.createdBy%></div>
+            </div>
+            <div class="column">
+                <div><b>Ship via:</b> <%= model.shipVia%></div>
+                <div><b>Freight Term:</b> <%= model.freightTerms%></div>
+            </div>
+            <div class="column">
+                <div><b>New Ship via:</b> <%= model.updatedShipvia%></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="row remark"><b>Remark:</b> <%= model.remarks%></div>
+        <div class="row">
+            <div class="column">
+                <div><b>Po Amt:</b> <%= model.poAmount%></div>
+                <div><b>So Amt:</b> <%= model.soAmount%></div>
+            </div>
+        <div class="column">
+            <div><b>Cbf:</b> <%= model.cbf%></div>
+            <div><b>Pieces:</b> <%= model.pieces%></div>
+        </div>
+        <div class="column">
+            <div><b>Weight:</b> <%= model.weight%></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+    <!-- <div class="row center">
+        <button class="large">Ok</button>
+    </div> -->
+</div>

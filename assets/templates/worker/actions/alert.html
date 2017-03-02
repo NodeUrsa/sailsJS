@@ -1,0 +1,11 @@
+<div class="modal worker">
+    <p class="center"><%=text%></p>
+    <div class="row center">
+    	<% if(buttons && buttons.length){
+    		for(var i = 0; i < buttons.length; i++){%>
+    			<button class="large <%= buttons[i].class%>"><%= buttons[i].text%></button>
+    		<%}}else{%>
+        <button class="large success">Ok</button>
+        <%}%>
+    </div>
+</div>

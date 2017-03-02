@@ -1,0 +1,5 @@
+<div class="button-set user_search_bar">
+	<% _.each(keywords, function(item){ %>
+    <button class="<%= item.keyword == keyword ? 'active' : '' %>" data-keyword="<%= item.keyword %>"><%= item.label %></button>
+    <% }); %>
+</div>

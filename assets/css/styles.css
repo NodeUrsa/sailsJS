@@ -1,0 +1,329 @@
+/* CSS Document */
+#header {
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#header #button_back {
+	position: absolute;
+	z-index: 25;
+	cursor: pointer;
+	top: 10px;
+	left: 15px;
+	width: 36px;
+	height: 36px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+	background-image: url('../imgs/metro/metro/back.png');
+}
+
+.user_search_bar {
+	margin-left:75px;
+	padding-top:15px;
+}
+
+
+/** login dialog **/
+.dialog_login {
+	width:210px;
+	height:300px;
+}
+.dialog_login button {
+	width:60px;
+	height:60px;
+	border-radius:30px;
+	margin-right:15px !important;
+	margin-bottom:10px !important;
+}
+
+
+
+/** panel **/
+
+.panel_header {
+	height:50px;
+}
+.panel_header .title {
+	margin:0px;
+	float:left;
+	height:50px;
+	line-height:50px;
+	margin-left:20px;
+	font-size:24px;
+	color:#fff;
+}
+.panel_header .panel_buttons {
+	float:right;
+	margin-right:50px;
+	margin-top:20px;
+}
+.panel_header .panel_buttons button {
+	width:130px;
+}
+
+#page #label {
+	height:20px;
+	margin-left:20px;
+	color:#fff;
+	font-size:16px;
+	line-height:20px;
+	margin-top:20px;
+}
+.data-content {
+	width: -webkit-calc(100% - 40px);
+	width: -moz-calc(100% - 40px);
+	width: calc(100% - 40px);
+	margin-left:20px;
+	cursor:default;
+	overflow-y: auto;
+}
+.data-content table {
+	width:100%;
+	max-height:100%;
+	padding:10px;
+	margin:0px !important;
+}
+.data-content table tr{
+	height:30px;
+}
+
+tr.selected {
+	background-color:rgba(28,183,236,0.8) !important;
+}
+
+
+#button_binLocation {
+	width:240px;
+}
+#button_binLocation button {
+	width:50px;
+	height:50px;
+	border-radius:20px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+
+
+/** icons **/
+
+.icn_user {
+	background-image:url('../imgs/metro/icons.png');
+	background-position:-211px 0px;
+	width:16px;
+	height:16px;
+	display:block;
+}
+
+
+#footer {
+	height:50px;
+	position:absolute;
+	left:0px;
+	width:100%;
+	top:100%;
+	margin-top:-50px;
+}
+
+#footer .times {float:right; margin-right:20px; }
+
+
+#footer #phase_stepper { float:left; margin:0px; margin-left:20px; height:50px; width:30%; min-width:300px;}
+#footer .timer { float:right; margin-right:30px; height:50px; }
+#footer .timer button { margin-right:10px; cursor:pointer; font-size:24px;line-height:30px;}
+
+
+#page .kioskTitle {
+	font-size:32px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+	margin-bottom:30px;
+}
+
+#page .kiosk_customer_search_bar {
+	display:inline-block;
+}
+
+
+.data-sub-content {
+	width:100%;
+	height:100%;
+	cursor:default;
+	overflow-y: scroll;
+	border:1px solid #000;	
+}
+
+.data-sub-content table {
+	width:100%;
+	max-height:100%;
+	padding:0px;
+	margin:0px !important;
+}
+
+.kiosk_footer_buttons {
+	margin-top:10px;
+}
+
+#page .kiosk_driverinfo_form {
+	width: -webkit-calc(100% - 40px);
+	width: -moz-calc(100% - 40px);
+	width: calc(100% - 40px);
+	margin-left:20px;
+	cursor:default;
+}
+#page .kiosk_driverinfo_form legend,
+#page .kiosk_driverinfo_form label  
+{ color:#fff; }
+
+#page .kiosk_driverinfo_form.inline_form .row label {
+	width: 15%;
+	display: inline-block;
+}
+#page .kiosk_driverinfo_form.inline_form .row .form-control {
+	width: 84.6%;
+	display: inline-block;
+}
+
+#page .kiosk_driverinfo_form.inline_form .input-control .btn-clear {
+	display: none;
+}
+
+#page .signature_wrapper {
+	background:#fff;
+	border:1px solid #c0c0c0;
+	width:500px;
+	height:100px;
+}
+#page #canvasDriverSignature {
+}
+
+@media print {
+    .printingPage { display: block !important; }
+}
+
+.item_list thead tr th, .packing_list thead td{
+    /*border-bottom: 5px solid red;*/
+    background: #a9a9a9 !important;
+    color: #ffffff !important;
+}
+
+
+@media print {
+    body{
+        padding-top: 0;
+    }
+
+    .packing_list thead td { -webkit-print-color-adjust: exact; }
+    .item_list thead tr th { -webkit-print-color-adjust: exact; }
+    body * {
+        visibility: hidden;
+    }
+    .pageBreak, .printingPage, .printingPage * {
+        visibility: visible;
+    }
+
+    .printingPage:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .pageBreak{
+        page-break-after:always;
+    }
+}
+
+
+
+/*@page{*/
+    /*size: auto;   *//* auto is the initial value */
+    /*margin: 0mm;  *//* this affects the margin in the printer settings */
+/*}*/
+
+.clickable {
+    cursor:pointer;
+}
+
+.table-heading .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    float: left;
+    vertical-align: baseline;
+}
+
+.table-heading .options {
+    float: right;
+}
+
+.table-heading .options .option {
+    font-size: 1.5em;
+    vertical-align: baseline;
+}
+
+.queue-tile .icon-list {
+    line-height: 56px;
+    height: 56px;
+    width: 56px;
+    font-size: 48px;
+}
+
+.queue-tile .icon-warning {
+    line-height: 56px;
+    height: 56px;
+    width: 56px;
+    font-size: 48px;
+    color: red;
+    float: right;
+}
+
+.queue-counter {
+    display: block;
+    margin-top: 15px;
+    float: none;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.queue-counter-container {
+    display: block;
+    float: right;
+}
+
+.spacer {
+    margin: 0px;
+    padding: 0px;
+    height: 15px;
+    width: 100%;
+}
+
+.tile .container {
+    padding: 1em;
+}
+
+body {
+    background-color: #5265B4;
+    padding: 1.5em;
+}
+
+.tile-container {
+    max-width: 1170px;
+}
+
+.metro .tile.location-select-item {
+    background-color: darkolivegreen;
+}
+
+.metro .tile.location-login-user {
+    background-color: darkolivegreen;
+}

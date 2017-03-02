@@ -1,0 +1,88 @@
+
+<div class="modal">
+    <div class="grid callCancelForm">
+        <h3 class="center">CANCELLATION FORM</h3>
+
+        <div class="row tRow1">
+            <div class="span4 offset1">
+                <input type="radio" value="1" name="nextWorker" checked>&nbsp;Cancel Entire Order
+            </div>
+            <div class="span4">
+                <div class="span4 offset1">
+                    <input type="radio" value="2" name="nextWorker">&nbsp;Cancel Specific Items
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="fence"></div>-->
+
+        <table class="table striped hovered">
+            <thead>
+            <tr>
+                <th class="text-left">Select</th>
+                <th class="text-left">Employee</th>
+                <th class="text-left">Order Type</th>
+                <th class="text-left">Sub Type</th>
+                <th class="text-left">Batch Number</th>
+                <th class="text-left">Est End</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+
+        <div class="row tRow2">
+            <div class="span4">Select the reason of cancellation:</div>
+            <div class="span4">
+                <select class="span6" name="reason">
+                    <option value="1">Customer requested cancellation of entire order </option>
+                    <option value="2">Express</option>
+                    <option value="3">Truck</option>
+                </select>
+            </div>
+        </div>
+        <br>
+
+        <div class="row trow3">
+            <div class="span1">Note:</div>
+            <textarea name="note" cols="63" rows="2"></textarea>
+        </div>
+
+        <br>
+
+
+        <div class="row tRow4">
+            <div class="span4 offset2">
+                <input type="checkbox" name="alertToManager">&nbsp;Alert Message Sent to Manager
+            </div>
+            <div class="span4">
+                <div class="span4">
+                    <input type="checkbox" name="alertToWorker">&nbsp;Alert Message Sent to Worker
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--<div class="row center">-->
+            <!--<input type="checkbox" name="logOff"> Do you want to log off the current worker?-->
+        <!--</div>-->
+
+        <button class="save">Confirm Cancellation </button>
+        <button class="delete">Cancel Process</button>
+
+    </div>
+
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,284 @@
+
+<div class="modal">
+<div class="label">General</div>
+<form>
+<div class="grid">
+<div class="row">
+    <div class="span1 width70">Type:</div>
+    <div class="span2">
+        <select class="span2" name="orderType">
+            <option value="1">Will Call</option>
+            <option value="2">Express</option>
+            <option value="3">Truck</option>
+        </select>
+    </div>
+    <div class="span2 offset1">Description:</div>
+    <input class="span2" type="text" name="name">
+
+
+
+    <div class="span4">
+        <div class="row">
+            <div class="span2 offset1" >Activate System:</div>
+            <div class="input-control switch" data-role="input-control">
+                <label> <input name="activated" type="checkbox">
+                    <span class="check"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="span2 offset1" style="display: none">Manager Access:</div>
+    <div class="span1" style="display: none" >
+        <div class="input-control switch" data-role="input-control">
+            <label> <input name="managerAccess" type="checkbox">
+                <span class="check"></span>
+            </label>
+        </div>
+    </div>
+
+
+</div>
+<div class="row">
+    <div class="span1 width70" data-role="label">Sub Type:</div>
+    <div class="span2">
+        <select class="span2" name="orderSubType">
+            <option value="0">UPS</option>
+            <option value="1">Fedex</option>
+            <option value="2">OnTrac</option>
+            <option value="3">LoneStar</option>
+            <option value="4">SpeeDee</option>
+            <option value="5">BBExpress</option>
+            <option value="6">MGC</option>
+            <option value="7">Others</option>
+        </select>
+    </div>
+
+    <div class="span2 offset1">Short Name:</div>
+    <input class="span1" type="text" name="shortName">
+</div>
+
+<div class="row">
+    <div class="span3">
+
+        <div class="row">
+            <fieldset class="span3" name="willCallGroupingMethod">
+                <legend>Will Call Grouping Method</legend>
+                <div class="span3">
+                    <div class="row">
+                        <div class="span2"><input type="checkbox" name="combineByItems"> Number of Items
+                        </div>
+                        <input class="span50" type="number" name="combineByItemsNumber">
+                    </div>
+                    <div class="row">
+                        <div class="span2">
+                            <input type="checkbox" name="combineByOrders"> Number of Orders
+                        </div>
+                        <input class="span50" type="number" name="combineByOrdersNumber">
+                    </div>
+                    <div class="row">
+                        <div class="span2">
+                            <input type="checkbox" name="combineByCbf"> Cubic Feet
+                        </div>
+                        <input class="span50" type="number" name="combineByCbfNumber">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="span2">Bin Assignment Flag:</div>
+            <div class="input-control switch" data-role="input-control" style="margin-left: 13px">
+                <label> <input name="binLocationFlag" type="checkbox">
+                    <span class="check"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span2">Number of Bins:</div>
+            <input type="number" class="span50" name="binLocation" min="0">
+        </div>
+    </div>
+    <fieldset class="span3 offset1" name="cuttoffPickupWillCall">
+        <legend>Cut-Offs & Pickup Table</legend>
+
+    </fieldset>
+    <div class="span3 offset1" >
+        <div class="row">
+            <div class="span1.5">Split Flag:</div>
+            <div class="span1">
+                <div class="input-control switch" data-role="input-control">
+                    <label> <input type="checkbox" name="splitFlag">
+                        <span class="check"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <fieldset class="span3" name="splitRequirment">
+                <legend>Split Requirment</legend>
+                <div class="span3">
+                    <div class="row">
+                        <div class="span2"><input type="checkbox" name="splitByItems"> Number of Items
+                        </div>
+                        <input class="span50" type="number" name="splitByItemsNumber">
+                    </div>
+                    <div class="row">
+                        <div class="span2">
+                            <input type="checkbox" name="splitBySales"> Sales Amount
+                        </div>
+                        <input class="span50" type="number" name="splitBySalesNumber">
+                    </div>
+                    <div class="row">
+                        <div class="span2">
+                            <input type="checkbox" name="splitByCbf"> Cubic Feet
+                        </div>
+                        <input class="span50" type="number" name="splitByCbfNumber">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+    </div>
+</div>
+
+<div class="row" style="margin-top: 10px;">
+    <div class="span4">
+        <div class="row">
+            <div class="span3">Multiple Packing Station:</div>
+            <div class="input-control switch" data-role="input-control">
+                <label> <input name="multiplePackFlag" type="checkbox">
+                    <span class="check"></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+    <div class="span2">
+        <div class="row">
+            <div class="span1">#Stations:</div>
+            <input type="number" class="span1" name="numberDocks" min="0">
+        </div>
+    </div>
+    <div class="span3" style="margin-left: 107px">
+        <div class="row">
+            <div class="span2">Wrap Flag:</div>
+            <div class="span1" style="margin-left: 2px">
+                <div class="input-control switch" data-role="input-control">
+                    <label> <input type="checkbox" name="wrapFlag">
+                        <span class="check"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="span4">
+        <div class="row">
+            <div class="span3">Pick Pack Flag:</div>
+            <div class="input-control switch" data-role="input-control">
+                <label> <input name="pickPackFlag" type="checkbox">
+                    <span class="check"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="span3 offset3">
+        <div class="row">
+            <div class="span2">Freight Flag:</div>
+            <div class="input-control switch" data-role="input-control">
+                <label> <input name="freightFlag" type="checkbox">
+                    <span class="check"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr style="margin-top: 0px; margin-bottom: 0px">
+
+<div class="row">
+    <div class="span3">
+        <div class="row"></div>
+        <div class="row">Express Type Detail</div>
+        <div class="row"></div>
+
+
+        <div class="row"></div>
+        <div class="row">
+            <div class="span2">Mix Sub Type:</div>
+            <div class="input-control switch" data-role="input-control">
+                <label> <input name="mixOrderTypeFlag" type="checkbox">
+                    <span class="check"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="span2">Box Dimensions:</div>
+            <div class="input-control switch" data-role="input-control">
+                <label> <input name="boxDimensionFlag" type="checkbox">
+                    <span class="check"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <fieldset class="span7" name="expressMixedMode">
+        <legend>Express Mixed Mode</legend>
+        <div class="row">
+            <div class="offset3 span50">Max Items</div>
+            <div class="span50 margin-left0">Max Orders</div>
+            <div class="span50 margin-left0">Max Volume</div>
+            <div class="span50 margin-left0">Quadrant</div>
+        </div>
+
+        <div class="row">
+            <div class="span1">Group 1:</div>
+            <div class="span2">up to</div>
+            <input type="number" class="span50" name="expGroup1Items" min="0">
+            <input type="number" class="span50" name="expGroup1Orders" min="0">
+            <input type="number" class="span50" name="expGroup1Maxvolume" min="0">
+        </div>
+        <div class="row">
+            <div class="span1">Group 2:</div>
+            <div class="span2">G1 < #Items <= than</div>
+            <input type="number" class="span50" name="expGroup2Items" min="0">
+            <input type="number" class="span50" name="expGroup2Orders" min="0">
+            <input type="number" class="span50" name="expGroup2Maxvolume" min="0">
+            <input type="text" disabled class="span50" name="expGroup2Qdr">
+
+        </div>
+        <div class="row">
+            <div class="span1">Group 3:</div>
+            <div class="span2">G2 < #Items <= than</div>
+            <input type="number" class="span50" name="expGroup3Items" min="0">
+            <input type="number" class="span50" name="expGroup3Orders" min="0">
+            <input type="number" class="span50" name="expGroup3Maxvolume" min="0">
+            <input type="text" disabled class="span50" name="expGroup3Qdr">
+        </div>
+        <div class="row">
+            <div class="span1">Group 4:</div>
+            <div class="span2">#Items > than</div>
+            <input type="text" class="span50" name="expGroup4Items" readonly>
+            <input type="number" class="span50" name="expGroup4Orders" min="0">
+            <input type="number" class="span50" name="expGroup4Maxvolume" min="0">
+            <input type="text" disabled class="span50" name="expGroup4Qdr">
+        </div>
+    </fieldset>
+
+    <fieldset class="span3" name="ExpressCutOffsPickup">
+        <legend>Express Cut-Offs & Pickup</legend>
+
+    </fieldset>
+</div>
+</div>
+</form>
+<div class="row center">
+    <button class="large success">Save</button>
+</div>
+</div>

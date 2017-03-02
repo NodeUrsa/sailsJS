@@ -1,0 +1,26 @@
+[
+	{
+		"id": "1",
+        "fromBranch":"Califonia" ,
+        "toBranch": "Texas",
+        "transferNumber": "TR23712,
+        "createDate": "02/28/2014",
+        "createdBy": "Pedro",
+        "BOL": "2140818",
+        "BOLDate": "02/28/2014",
+        "InvAmt": 413,
+        "selected": "1"
+	},
+	{
+		"id": "2",
+        "fromBranch":"Califonia" ,
+        "toBranch": "Texas",
+        "transferNumber": "TR23713,
+        "createDate": "02/28/2014",
+        "createdBy": "Pedro",
+        "BOL": "2140818",
+        "BOLDate": "02/28/2014",
+        "InvAmt": 1413,
+        "selected": "0"
+	},
+]

@@ -1,0 +1,52 @@
+<style type="text/css">
+    .login-screen {
+        color: #fff;
+    }
+    .login-screen header {
+        height: 100px;
+        font-size: 40px;
+        line-height: 90px;
+        text-align: center;
+    }
+    .login-screen .centered-box {
+        /* border:1px solid black; */
+        width: 230px;
+        height: 100px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -115px;
+    }
+</style>
+<div class="container login-screen">
+    <header>TYC Genera Warehouse System</header>
+    <form action="/auth/login" method="POST">
+        <div class="centered-box">
+            <div class="grid">
+                <div class="row">
+                    <div class="span1">Login:</div>
+                    <input type="text" class="span2" name="userName">
+                </div>
+                <div class="row">
+                    <div class="span1">Password:</div>
+                    <input type="password" class="span2" name="password">
+                </div>
+                <div class="row center">
+                    <button class="mini success">Go</button>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="ref" value="/manager/login">
+        <input type="hidden" name="red" value="/manager/">
+    </form>
+</div>
+<script type="text/javascript" src="/js/libs/url/parameters.js"></script>
+<script type="text/javascript">
+    (function () {
+        var error = getURLParameter('error');
+        if (error) {
+            alert('Error: ' + error);
+        }
+    })();
+</script>

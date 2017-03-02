@@ -1,0 +1,146 @@
+<div class="modal">
+    <div class="label">General</div>
+    <div class="grid editUser">
+        <div class="row">
+            <div class="span2">First Name:</div>
+            <input class="span2" type="text" name="firstName" value="<%=model.firstName%>">
+            <div class="span2">UserName:</div>
+            <input class="span2" type="text" disabled name="userName" value="<%=model.userName%>">
+        </div>
+        <div class="row">
+            <div class="span2">Last Name:</div>
+            <input class="span2" type="text" name="lastName" value="<%= model.lastName%>">
+            <div class="span2">User Type:</div>
+            <div class="span2">
+                <select name="type" disabled>
+                    <option value="1" <%= (model.role == '1') ? 'selected' : '' %>>Admin</option>
+                    <option value="2" <%= (model.role == '2') ? 'selected' : '' %>>Manager</option>
+                    <option value="3" <%= (model.role == '3') ? 'selected' : '' %>>Worker</option>
+                    <option value="4" <%= (model.role == '4') ? 'selected' : '' %>>Call Center</option>
+                    <option value="5" <%= (model.role == '5') ? 'selected' : '' %>>Manager/Worker</option>
+                </select>
+            </div>
+        </div>
+        <% if (!model.id) { %>
+        <div class="row">
+            <div class="span1">Password:</div>
+            <div class="span2">
+                <input type="password" name="password">
+            </div>
+            <div class="span1">Confirm Password:</div>
+            <div class="span2">
+                <input type="password" name="password2">
+            </div>
+        </div>
+        <% } %>
+        <div class="row">
+            <div class="span2">Active:</div>
+            <div class="span1">
+                <div class="input-control switch" data-role="input-control">
+                    <label> <input name="active" type="checkbox" <%= (model.active) ? 'checked' : '' %>> <span
+                        class="check"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+        	<div class="span4.5">
+				<fieldset>
+					<legend>Hours of Work</legend>
+					<div class="row">
+						<div class="span1">Start:</div>
+						<div class="span2">
+							<input type="text" name="hoursStart" placeholder="HH:mm"
+								value="<%=model.operationStartHour%>">
+						</div>
+					</div>
+					<div class="row">
+						<div class="span1">End:</div>
+						<div class="span2">
+							<input type="text" name="hoursEnd" placeholder="HH:mm"
+								value="<%=model.operationEndHour%>">
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Days of Work</legend>
+					<div class="row days">
+							<input type="checkbox" name="sunday" <%=(model.workDays && model.workDays.sunday)?'checked':''%>>S
+							<input type="checkbox" name="monday" <%=(model.workDays && model.workDays.monday)?'checked':''%>>M
+							<input type="checkbox" name="tuesday" <%=(model.workDays && model.workDays.tuesday)?'checked':''%>>T
+							<input type="checkbox" name="wednesday" <%=(model.workDays && model.workDays.wednesday)?'checked':''%>>W
+							<input type="checkbox" name="thursday" <%=(model.workDays && model.workDays.thursday)?'checked':''%>>T
+							<input type="checkbox" name="friday" <%=(model.workDays && model.workDays.friday)?'checked':''%>>F
+							<input type="checkbox" name="saturday" <%=(model.workDays && model.workDays.saturday)?'checked':''%>>S
+					</div>
+				</fieldset>
+			</div>
+			<div class="span5">
+				<fieldset>
+					<legend>User Activities</legend>
+					
+					<div class="row">
+						<div class="span2">
+							<div class="row">Will Call</div>
+							<div class="row">
+								<div class="span1"><input type="checkbox" name="willcallPick" <%=(model.willcallPick)?'checked':''%> /> Pick</div>
+								<div class="span1"><input type="checkbox" name="willcallPack" <%=(model.willcallPack)?'checked':''%> /> Pack</div>
+							</div>
+							<div class="row"></div>
+							<div class="row">Truck</div>
+							<div class="row">
+								<div class="span1"><input type="checkbox" name="truckPick" <%=(model.truckPick)?'checked':''%> /> Pick</div>
+								<div class="span1"><input type="checkbox" name="truckPack" <%=(model.truckPack)?'checked':''%> /> Pack</div>
+							</div>
+						</div>
+						<div class="span2" style="margin-left: 50px">
+							<div class="row">Express</div>
+							<div class="row">
+								<div class="span1"><input type="checkbox" name="expressPick" <%=(model.expressPick)?'checked':''%> /> Pick</div>
+								<div class="span1"><input type="checkbox" name="expressPack" <%=(model.expressPack)?'checked':''%> /> Pack</div>
+							</div>
+							<div class="row"></div>
+							<div class="row">Incoming Shipments</div>
+							<div class="row">
+								<div class="span2"><input type="checkbox" name="shipRestock" <%=(model.shipRestock)?'checked':''%> /> Re-Stocking</div>
+							</div>
+						</div>
+					</div>
+					
+
+					<!-- <div class="row">
+						<div class="span3 offset1">
+							<input type="checkbox" /> Picking Orders
+						</div>
+					</div>
+					<div class="row">
+						<div class="span3 offset1">
+							<input type="checkbox" /> Packing Orders
+						</div>
+					</div>
+					<div class="row">
+						<div class="span3 offset1">
+							<input type="checkbox" /> Receiving Orders
+						</div>
+					</div>
+					<div class="row">
+						<div class="span3 offset1">
+							<input type="checkbox" /> Express Orders Processing
+						</div>
+					</div>
+					<div class="row">
+						<div class="span3 offset1">
+							<input type="checkbox" /> Will Call
+						</div>
+					</div> -->
+				</fieldset>
+
+			</div>
+		</div>
+        
+    </div>
+    <div class="row center">
+        <button class="large success">Save</button>
+    </div>
+</div>

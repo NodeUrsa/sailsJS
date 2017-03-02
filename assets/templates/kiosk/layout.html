@@ -1,0 +1,18 @@
+<h1 class="kioskTitle">
+    TYC Genera Corporation<BR />WELCOME
+</h1>
+
+<script language="javascript">
+$(document).ready(function(e) {
+    $(window).resize(function() {
+        resizeDataContentPanel();
+    });
+});
+
+function resizeDataContentPanel() {
+    $('.data-content').height($(window).height() - 230);
+}
+</script>
+
+<div class="kiosk_content"></div>
+<div class="kiosk_footer_buttons"></div>

@@ -1,0 +1,60 @@
+<div class="data-content">
+<form>
+	<fieldset class="kiosk_driverinfo_form inline_form">
+		<legend>Company Info</legend>
+		<div class="row">
+			<label>Company ID </label>
+			<div class="input-control text form-control" data-role="input-control">
+				<input type="text" placeholder="Customer Id" value="<%= order.customerNumber %>" disabled>
+				<button class="btn-clear" tabindex="-1"></button>
+			</div>
+		</div>
+		<div class="row">
+			<label>Company Name </label>
+			<div class="input-control text form-control" data-role="input-control">
+				<input type="text" placeholder="Customer Name" value="<%= order.customerName %>" disabled>
+				<button class="btn-clear" tabindex="-1"></button>
+			</div>
+		</div>
+		<div class="row">
+			<label>Company Address </label>
+			<div class="input-control text form-control" data-role="input-control">
+				<input type="text" placeholder="Customer Address" value="<%= order.shipToAddress1 %>" disabled>
+				<button class="btn-clear" tabindex="-1"></button>
+			</div>
+		</div>
+		<div class="row">
+			<label>City, State, Zipcode </label>
+			<div class="input-control text form-control" data-role="input-control">
+				<input type="text" placeholder="City, State, Zipcode" value="<%= order.shipToCity %>, <%= order.shipToState %>, <%= order.shipToZip %>" disabled>
+				<button class="btn-clear" tabindex="-1"></button>
+			</div>
+		</div>
+		<legend>Driver Info</legend>
+		<div class="row">
+			<label>Driver Name </label>
+			<div class="input-control text form-control" data-role="input-control">
+				<input type="text" name="driverName" placeholder="Driver Name" data-required="text">
+				<button class="btn-clear" tabindex="-1"></button>
+			</div>
+		</div>
+		<div class="row">
+			<label style="top: -80px; position: relative;">Driver Signature <a id="button_signature_clear">Clear</a></label>
+			<div class="form-control">
+				<div class="signature_wrapper">
+					<canvas id="canvasDriverSignature" width="500px" height="100px"></canvas>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="input-control text" data-role="input-control">
+			<input type="text" placeholder="ID Number">
+			<button class="btn-clear" tabindex="-1"></button>
+		</div> -->
+		<div>
+            <input type="checkbox" id="accept_terms">
+            <span class="check"></span>
+            <label for="accept_terms" class="fg-white" style="display: inline;">Please check this box if you agree that the company above is taking full responsibility for the items you are picking up</label> 
+		</div>
+	</fieldset>
+</form>
+</div>

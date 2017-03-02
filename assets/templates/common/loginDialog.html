@@ -1,0 +1,26 @@
+<div class="dialog_login">
+<input type="hidden" id="user_id" value="<%= user_id %>" />
+<input type="hidden" id="username" value="<% username %>" />
+<div class="input-control password">
+    <input type="password" value="" id="text_passcode" />
+    <button class="btn-reveal"></button>
+</div>
+<div class="button-set">
+<% var i;for(i = 1; i <= 9; i++) { %>
+	<button data-code="<%= i %>" onClick="onLoginPasscodeKeyclick(<%= i %>)" <% if(i % 3 == 0) { %>style="margin-right:0px !important;"<% } %>><%= i %></button>
+<% } %>
+	<button onClick="onLoginPasscodeReset()">RESET</button>
+	<button data-code="0" onClick="onLoginPasscodeKeyclick(0)">0</button>
+	<button id="button_login" style="margin-right:0px !important">LOGIN</button>
+</div>
+<script language="javascript">
+function onLoginPasscodeKeyclick(code) {
+	var text_passcode = $('#text_passcode');
+	text_passcode.val(text_passcode.val() + code);
+}
+function onLoginPasscodeReset() {
+	var text_passcode = $('#text_passcode');
+	text_passcode.val("");
+}
+</script>
+</div>

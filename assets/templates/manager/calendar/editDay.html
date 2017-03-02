@@ -1,0 +1,71 @@
+<div class="modal editDayScroll">
+	<div class="grid">
+		<div class="row">
+			<div class="span8">
+				<div class="row">
+					<div class="span2">
+						<div class="weekday"><%=date.weekday%></div>
+						<div class="day"><%=date.day%></div>
+					</div>
+				</div>
+				<div class="row"></div>
+				<div class="row">
+					<table class=" editDay hovered striped table">
+						<thead>
+							<tr>
+                                <th>Employee</th>
+                                <th>On</th>
+                                <th>Auto</th>
+                                <th>Will Call</th>
+                                <th>Express</th>
+                                <th>Truck</th>
+                                <th>Incoming</th>
+							</tr>
+						</thead>
+						<tbody ></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="span2 center margin30">
+				<div class="row">Fill Rate</div>
+				<div class="row day" id="fillRate"></div>
+				<div class="row"></div>
+				<div class="row">Scheduled Shipments</div>
+				<div class="row">
+					<div class="span1">SHIP IN</div>
+					<div class="span1">TRX IN</div>
+				</div>
+				<div class="row">
+					<div class="span1 day">0</div>
+					<div class="span1 day">0</div>
+				</div>
+				<div class="row"></div>
+				<div class="row">Scheduled Resources</div>
+				<div class="row">
+					<div class="span1">EE ON</div>
+					<div class="span1">EE OFF</div>
+				</div>
+				<div class="row">
+					<div class="span1 day" id="eeOn"></div>
+					<div class="span1 day"></div>
+				</div>
+				<div class="row hideBlock">
+					<input type="text" class="span1" /><input type="number"  class="span50" />
+				</div>
+				<div class="row"></div>
+			</div>
+		</div>
+        <div class="buttonStaticRow">
+
+            <div class="row">
+                <div class="offset4 span2">
+                    <button class="large success span2">Save</button>
+                </div>
+            </div>
+
+        </div>
+
+
+	</div>
+
+</div>

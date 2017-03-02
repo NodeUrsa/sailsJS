@@ -1,0 +1,11 @@
+<center>
+    <button id="button_prev"<% if (phase == 1) { %> class="disabled"<% } %>>
+        <i class="icon-arrow-left-2 on-left"></i>Previous
+    </button>
+    <button id="button_home">
+        <i class="icon-home on-left"></i>Main Menu
+    </button>
+    <button id="button_next" class="disabled">
+        <% if (phase == 3) { %>Done<% } else { %>Next<% } %><i class="icon-arrow-right-2 on-right"></i>
+    </button>
+</center>

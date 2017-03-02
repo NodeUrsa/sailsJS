@@ -1,0 +1,7 @@
+<td><%=model.pn%></td>
+<td><%=model.locator%></td>
+<td><%=(model.allocated - (model.allocated % model.stdpk)) / model.stdpk%> / <%=model.allocated % model.stdpk%></td>
+<td><%=model.stdpk%></td>
+<td><%=model.allocated%></td>
+<td><%=model.shortage%></td>
+<td pn="<%=model.pn%>"><%=model.picked%></td>

@@ -1,0 +1,55 @@
+<style type="text/css">
+    html, body {
+        background: white;
+    }
+    .barcodebox {
+        display: inline-block;
+        padding: 15px;
+    }
+    .barcodebox img {
+        width: 260px;
+    }
+    form {
+        margin: 0 auto;
+        width: 570px;
+    }
+    form label {
+        font-size: 60px !important;
+        text-align: center;
+    }
+    form input {
+        width: 400px;
+        font-size: 60px !important;
+    }
+    h1, h2 {
+        color: rgb(0, 0, 0);
+        display: block;
+        font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        height: 48px;
+        letter-spacing: normal;
+        line-height: 48px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+</style>
+<form action="/admin/barcode" method="GET">
+    <label>Batch:</label> <input type="text" name="masterBatchId" value="<%= masterBatchId %>">
+</form>
+<% _.each(barcodes, function (bar) { %>
+<div class="barcodebox">
+    <h2><%= bar.item %></h2>
+    <img src="<%= bar.img %>">
+</div>
+<% }); %>
+<script type="text/javascript">
+    window.print();
+</script>

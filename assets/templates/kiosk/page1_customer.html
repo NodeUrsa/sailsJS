@@ -1,0 +1,23 @@
+<center>
+    <div class="button-set kiosk_customer_search_bar">
+        <% _.each(keywords, function (item) { %>
+        <button class="<%= item.keyword == filter ? 'active' : '' %>" data-keyword="<%= item.keyword %>">
+            <%= item.label %>
+        </button>
+        <% }); %>
+    </div>
+</center>
+<div class="data-content">
+    <table class="table striped hovered">
+        <thead>
+            <tr>
+                <th class="text-left">Customer ID</th>
+                <th class="text-left">Customer Name</th>
+                <th class="text-left">City</th>
+                <th class="text-left">State</th>
+                <th class="text-left">Zip</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>

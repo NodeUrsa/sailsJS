@@ -1,0 +1,66 @@
+[
+	{
+		"user_id": 1,
+		"name_first": "John",
+		"name_last": "Smith",
+		"user_type": "admin",
+		"hours_work": "8",
+		"status": "1"
+	},
+	{
+		"user_id": 1,
+		"name_first": "John",
+		"name_last": "Smith",
+		"user_type": "admin",
+		"hours_work": "8",
+		"status": "1"
+	},
+	{
+		"user_id": 1,
+		"name_first": "John",
+		"name_last": "Smith",
+		"user_type": "admin",
+		"hours_work": "8",
+		"status": "1"
+	},
+	{
+		"user_id": 1,
+		"name_first": "John",
+		"name_last": "Smith",
+		"user_type": "admin",
+		"hours_work": "8",
+		"status": "1"
+	},
+	{
+		"user_id": 1,
+		"name_first": "John",
+		"name_last": "Smith",
+		"user_type": "admin",
+		"hours_work": "8",
+		"status": "1"
+	},
+	{
+		"user_id": 1,
+		"name_first": "John",
+		"name_last": "Smith",
+		"user_type": "admin",
+		"hours_work": "8",
+		"status": "1"
+	},
+	{
+		"user_id": 1,
+		"name_first": "John",
+		"name_last": "Smith",
+		"user_type": "admin",
+		"hours_work": "8",
+		"status": "1"
+	},
+	{
+		"user_id": 1,
+		"name_first": "John",
+		"name_last": "Smith",
+		"user_type": "admin",
+		"hours_work": "8",
+		"status": "1"
+	}
+]

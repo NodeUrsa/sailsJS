@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/assets/css/metro-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/iconFont.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+</head>
+<body class="metro">
+<div class="tile-container">
+    <% if (isManager) { %>
+
+    <a href="#/manager/willcall">
+        <div id="will-call" class="tile double double-vertical bg-darkCobalt bg-hover-cobalt queue-tile">
+            <div class="tile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="queue-header">
+                            <i class="icon icon-list fg-white"></i>
+                            <i class="icon-warning"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-spacer">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-container">
+                            <div class="queue-counter queue-counter-top">6</div>
+                            <div class="queue-counter queue-counter-bottom">12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-status">
+                <span class="name">Will Call</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/manager/activities">
+        <div id="activities" class="tile double double-vertical bg-darkIndigo bg-hover-indigo queue-tile">
+            <div class="tile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="queue-header">
+                            <i class="icon icon-list fg-white"></i>
+                            <i class="icon-warning"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-spacer">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-container">
+                            <div class="queue-counter queue-counter-top">6</div>
+                            <div class="queue-counter queue-counter-bottom">12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-status">
+                <span class="name">Activities</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/manager/standardout">
+        <div id="standardout" class="tile double double-vertical bg-darkBrown bg-hover-brown queue-tile">
+            <div class="tile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="queue-header">
+                            <i class="icon icon-list fg-white"></i>
+                            <i class="icon-warning"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-spacer">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-container">
+                            <div class="queue-counter queue-counter-top">6</div>
+                            <div class="queue-counter queue-counter-bottom">12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-status">
+                <span class="name">Standard Out</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/manager/standardin">
+        <div id="standardin" class="tile double double-vertical bg-darkEmerald bg-hover-emerald queue-tile">
+            <div class="tile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="queue-header">
+                            <i class="icon icon-list fg-white"></i>
+                            <i class="icon-warning"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-spacer">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-container">
+                            <div class="queue-counter queue-counter-top">6</div>
+                            <div class="queue-counter queue-counter-bottom">12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-status">
+                <span class="name">Standard In</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/manager/trxin">
+        <div id="trxin" class="tile double double-vertical bg-darkTeal bg-hover-teal queue-tile">
+            <div class="tile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="queue-header">
+                            <i class="icon icon-list fg-white"></i>
+                            <i class="icon-warning"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-spacer">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-container">
+                            <div class="queue-counter queue-counter-top">6</div>
+                            <div class="queue-counter queue-counter-bottom">12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-status">
+                <span class="name">Transfer In</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/manager/trxout">
+        <div id="trxout" class="tile double double-vertical bg-darkPink bg-hover-pink queue-tile">
+            <div class="tile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="queue-header">
+                            <i class="icon icon-list fg-white"></i>
+                            <i class="icon-warning"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-spacer">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-container">
+                            <div class="queue-counter queue-counter-top">6</div>
+                            <div class="queue-counter queue-counter-bottom">12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-status">
+                <span class="name">Transfer Out</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/manager/shipin">
+        <div id="shipin" class="tile double double-vertical bg-gray bg-hover-grayLight queue-tile">
+            <div class="tile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="queue-header">
+                            <i class="icon icon-list fg-white"></i>
+                            <i class="icon-warning"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-spacer">&nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="queue-counter-container">
+                            <div class="queue-counter queue-counter-top">6</div>
+                            <div class="queue-counter queue-counter-bottom">12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-status">
+                <span class="name">Ship In</span>
+            </div>
+        </div>
+    </a>
+    <% } %>
+    <% if (isAdmin) { %>
+    
+    <a href="#admin/locations">
+        <div class="tile double double-vertical bg-none">
+            <div class="tile-content icon">
+                <i class="icon icon-user-2"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Location</span>
+            </div>
+        </div>
+    </a>
+    <a href="#admin/userSetup">
+        <div class="tile double double-vertical bg-none">
+            <div class="tile-content icon">
+                <i class="icon icon-user-2"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">User Setup</span>
+            </div>
+        </div>
+    </a>
+    <a href="#admin/orderTypes">
+        <div class="tile double double-vertical bg-none">
+            <div class="tile-content icon">
+                <i class="icon icon-user-2"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Order Types</span>
+            </div>
+        </div>
+    </a>
+    <a href="#admin/orderMatrix">
+        <div class="tile double double-vertical bg-none">
+            <div class="tile-content icon">
+                <i class="icon icon-user-2"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Order Matrix</span>
+            </div>
+        </div>
+    </a>
+    <a href="#admin/reports">
+        <div class="tile double double-vertical bg-none">
+            <div class="tile-content icon">
+                <i class="icon icon-user-2"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Reports</span>
+            </div>
+        </div>
+    </a>
+    
+    <!-- <a href="#/admin/users">
+        <div class="tile double double-vertical bg-olive bg-hover-lightOlive">
+            <div class="tile-content icon">
+                <i class="icon icon-user-2"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">User Management</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/admin/locations">
+        <div class="tile double double-vertical bg-darkGreen bg-hover-green">
+            <div class="tile-content icon">
+                <i class="icon icon-cube"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Location Management</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/admin/order-types">
+        <div class="tile double double-vertical bg-darkBlue bg-hover-blue">
+            <div class="tile-content icon">
+                <i class="icon icon-tag"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Order Type Management</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/admin/order-activities">
+        <div class="tile double double-vertical bg-lightGreen bg-hover-green">
+            <div class="tile-content icon">
+                <i class="icon icon-accessibility"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Order Activity Management</span>
+            </div>
+        </div>
+    </a> -->
+    <% } %>
+    <% if (!isAdmin) { %>
+    <a href="#picking">
+        <div class="tile double double-vertical bg-darkRed bg-hover-red">
+            <div class="tile-content icon">
+                <i class="icon icon-download-2"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Picking</span>
+            </div>
+        </div>
+    </a>
+    <a href="#/user/willcall_activities">
+        <div class="tile double double-vertical bg-darkRed bg-hover-red">
+            <div class="tile-content icon">
+                <i class="icon icon-download-2"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Will Call Orders</span>
+            </div>
+        </div>
+    </a>
+    <a href="#kiosk">
+        <div class="tile double double-vertical bg-lightOrange bg-hover-orange">
+            <div class="tile-content icon">
+                <i class="icon icon-screen"></i>
+            </div>
+            <div class="tile-status">
+                <span class="name">Kiosk</span>
+            </div>
+        </div>
+    </a>
+    <%}%>
+</div>
+</body>
+</html>

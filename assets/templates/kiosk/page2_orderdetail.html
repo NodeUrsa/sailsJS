@@ -1,0 +1,20 @@
+<div class="data-sub-content">
+	<table class="table striped hovered">
+    	<thead>
+            <tr>
+                <th class="text-left">Item Number</th>
+                <th class="text-left">Item Description</th>
+                <th class="text-left">Quantity</th>
+            </tr>
+		</thead>
+        <tbody>
+        <% _.each(orderItems.models, function(item){ %>
+            <tr data-id="<%=item.get('id')%>">
+                <td><%= item.get('itemNumber') %></td>
+                <td><%= item.get('itemDescription') %></td>
+                <td><%= item.get('allocatedQuantity') %></td>
+            </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>

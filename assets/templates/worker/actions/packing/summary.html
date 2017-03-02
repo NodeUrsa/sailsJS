@@ -1,0 +1,26 @@
+<div class="modal worker">
+    <div class="grid span5 centered">
+    	<div class="row">
+    		<div class="span4">Total Number of Orders:</div>
+    		<div class="span1"><%=model.ordersCount%></div>
+    	</div>
+    	<div class="row">
+    		<div class="span4">Total Number of Allocated Items:</div>
+    		<div class="span1"><%=allocated%></div>
+    	</div>
+    	<div class="row">
+    		<div class="span4">Total Number of Shortage Items:</div>
+    		<div class="span1"><%=shortage%></div>
+    	</div>
+    	<div class="row">
+    		<div class="span4">Total Number of Picked Items:</div>
+    		<div class="span1"><%=picked%></div>
+    	</div>
+    	<div class="row"></div>
+    	<div class="row center">Do you want to process?</div>
+    </div>
+    <div class="row center">
+        <button class="large success">Yes</button>
+        <button class="large danger">No</button>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="panel_header">
+    <label class="title">Will Call Orders</label>
+    <div class="panel_buttons">
+        <button id="button_show_header">Show Headers</button>
+        <button id="button_item_lookup">Item Lookup</button>
+        <button id="button_show_all"><!--% if(phase == 1 && filterBy == null){%-->Hide Completed<!--%}else{%-->Show All<!--%}%--></button>
+        <button id="button_start_picking">Start Picking</button>
+        <button id="button_finish_phase">Finish Phase</button>
+        <button id="button_dashboard">Dashboard</button>
+    </div>
+</div>
+<div id="label">Batch : <!--%=batch.get('id')%--></div>
+<div class="data-content"></div>
+<div class="panel_footer">
+    <div class="stepper rounded" data-role="stepper" data-steps="4" id="phase_stepper"></div>
+    <div class="timer">
+        <button class="icon-arrow-left-2 fg-white bg-transparent"></button>
+        <button class="icon-pause fg-white bg-transparent" id="button_trackpause"></button>
+        <button class="icon-arrow-right-2 fg-gray bg-transparent"></button>
+    </div>
+</div>

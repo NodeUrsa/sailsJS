@@ -1,0 +1,84 @@
+<div class="grid fluid">
+<div class="row">
+    <div class="span4">
+        <div class="panel">
+            <div class="panel-header">
+                Billing Information
+            </div>
+            <div class="panel-content" style="height:150px;">
+                <div>Customer Number: <%=orderDetail.get('customerId')%></div>
+                <div>Customer Name: <%=orderDetail.get('customerName')%></div>
+                <div>Address : <%=orderDetail.get('city')%>, <%=orderDetail.get('state')%></div>
+            </div>
+        </div>
+    </div>
+    <div class="span4">
+        <div class="panel">
+            <div class="panel-header">
+                Shipping Information
+            </div>
+            <div class="panel-content" style="height:150px;">
+                <div>Order Number : <%=orderDetail.get('id')%></div>
+                <div>Delivery Number : 3892398</div>
+                <div>Order Date : <%=orderDetail.get('orderDate')%></div>
+                <div>Due Date : <%=orderDetail.get('orderDate')%></div>
+                <div>Release Date : <%=orderDetail.get('releaseDate')%></div>
+                <div>Print Date : <%=orderDetail.get('orderDate')%></div>
+            </div>
+        </div>
+    </div>
+    <div class="span4">
+        <div class="panel">
+            <div class="panel-header">
+                Order Information
+            </div>
+            <div class="panel-content" style="height:150px;">
+                <div>Order Number : <%=orderDetail.get('id')%></div>
+                <div>Delivery Number : 3892398</div>
+                <div>Order Date : <%=orderDetail.get('orderDate')%></div>
+                <div>Due Date : <%=orderDetail.get('orderDate')%></div>
+                <div>Release Date : <%=orderDetail.get('releaseDate')%></div>
+                <div>Print Date : <%=orderDetail.get('orderDate')%></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="span4">
+        <div class="panel">
+            <div class="panel-header">
+                Information1
+            </div>
+            <div class="panel-content" style="height:150px;">
+                <div>PO Number : <%=orderDetail.get('id')%></div>
+                <div>Created By : Blablabla</div>
+                <BR>
+                <div>Ship Via : WILL CALL</div>
+                <div>Freight Terms : Collect...</div>
+            </div>
+        </div>
+    </div>
+    <div class="span4">
+        <div class="panel">
+            <div class="panel-header">
+                Remarks
+            </div>
+            <div class="panel-content" style="height:150px;">
+            </div>
+        </div>
+    </div>
+    <div class="span4">
+        <div class="panel">
+            <div class="panel-header">
+                Information2
+            </div>
+            <div class="panel-content" style="height:150px;">
+                <div>PO Amount : $323.39</div>
+                <div>SO Amount : $323.39</div>
+                <div>CBF : 5.55</div>
+                <div>Weight : <%=orderDetail.get('weight')%></div>
+                <div>Pieces : <%=orderDetail.get('pieces')%></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="workerPageHome">
+	<header><%= model.firstName + ' ' + model.lastName%></header>
+	<div class="menu">
+		<div class="item <%=(batchHeader.batchStage != 1)?'disabled':''%>" action="picking">
+			<div class="title">Picking</div>
+			<div class="batch-header">
+			<% if (batchHeader.batchStage == 1) { %>
+				<div>Master Batch: <%= batchHeader.masterBatchId %></div>
+				<div>Order Type: <%= type %></div>
+				<div>Number of Orders: <%= batchHeader.ordersCount %></div>
+				<%if(transferLocation){%>
+					<div>Transfer Location: <%= transferLocation.location %></div>
+				<% }} %>
+			</div>
+		</div>
+		<div class="item <%=(batchHeader.batchStage != 2)?'disabled':''%>" action="packing">
+			<div class="title">Packing</div>
+			<div class="batch-header">
+			<% if (batchHeader.batchStage == 2) { %>
+				<div>Master Batch: <%= batchHeader.masterBatchId %></div>
+				<div>Order Type: <%= type %></div>
+				<div>Pack Location: <%= (batchHeader.orderType)?batchHeader.orderType.shortName : '' %></div>
+				<div>Number of Orders: <%= batchHeader.ordersCount %></div>
+				<%if(transferLocation){%>
+					<div>Transfer Location: <%= transferLocation.location %></div>
+				<% }} %>
+			</div>
+		</div>
+		<div class="item disabled" action="receiving">
+			<div class="title">Receiving</div>
+		</div>
+		<div class="item">
+			<i class="order-types"></i>
+			<div class="label">Item Lookup</div>
+		</div>
+		<div class="item">
+			<i class="order-types"></i>
+			<div class="label">Main Order Queue</div>
+		</div>
+		<div class="item">
+			<i class="order-types"></i>
+			<div class="label">Cycle Count</div>
+		</div>
+	</div>
+	<footer>
+		<div class="btn-shutdown">
+			<i class="icon-switch"></i>
+		</div>
+	</footer>
+</div>

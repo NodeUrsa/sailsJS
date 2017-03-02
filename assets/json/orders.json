@@ -1,0 +1,805 @@
+[
+	{
+		"id": 1910358,
+		"customerId": "D014",
+		"customerName": "Giacomo Gulkizzoni",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "S",
+		"Employee": "Jose Manue",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910360,
+		"customerId": "D015",
+		"customerName": "Marco Botton Tuttofare",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "S",
+		"Employee": "Jose Manue",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910363,
+		"customerId": "DF035",
+		"customerName": "Mariah Maclachlan",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "S",
+		"Employee": "Jose Manue",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910364,
+		"customerId": "VL0124",
+		"customerName": "Valerie Liberty",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "S",
+		"Employee": "Jose Manue",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910365,
+		"customerId": "DE0027",
+		"customerName": "Guido Jack",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910366,
+		"customerId": "D015",
+		"customerName": "Marco Botton Tuttofare",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": 2567,
+		"Employee": 54,
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910367,
+		"customerId": "DF035",
+		"customerName": "Mariah Maclachlan",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910368,
+		"customerId": "VL0124",
+		"customerName": "Valerie Liberty",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910369,
+		"customerId": "DE0027",
+		"customerName": "Guido Jack",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910370,
+		"customerId": "D015",
+		"customerName": "Marco Botton Tuttofare",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": ""
+	},
+	{
+		"id": 1910373,
+		"customerId": "DF035",
+		"customerName": "Mariah Maclachlan",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910374,
+		"customerId": "VL0124",
+		"customerName": "Valerie Liberty",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910375,
+		"customerId": "DE0027",
+		"customerName": "Guido Jack",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910380,
+		"customerId": "D015",
+		"customerName": "Marco Botton Tuttofare",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910383,
+		"customerId": "DF035",
+		"customerName": "Mariah Maclachlan",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910384,
+		"customerId": "VL0124",
+		"customerName": "Valerie Liberty",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910385,
+		"customerId": "DE0027",
+		"customerName": "Guido Jack",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910390,
+		"customerId": "D015",
+		"customerName": "Marco Botton Tuttofare",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910393,
+		"customerId": "DF035",
+		"customerName": "Mariah Maclachlan",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910394,
+		"customerId": "VL0124",
+		"customerName": "Valerie Liberty",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910395,
+		"customerId": "DE0027",
+		"customerName": "Guido Jack",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910460,
+		"customerId": "D015",
+		"customerName": "Marco Botton Tuttofare",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910463,
+		"customerId": "DF035",
+		"customerName": "Mariah Maclachlan",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910464,
+		"customerId": "VL0124",
+		"customerName": "Valerie Liberty",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	},
+	{
+		"id": 1910465,
+		"customerId": "DE0027",
+		"customerName": "Guido Jack",
+		"city": "Oritario",
+		"state": "CA",
+		"orderDate": "02/28/2014",
+		"releaseDate": "02/28/2014",
+		"stage": "",
+		"Employee": "",
+		"items": [
+			{
+				"id": "10001",
+				"partNo": "20-5575-90-0",
+				"locator": "B.10.AB",
+				"box": 0,
+				"pieces": 1,
+				"allocated": 1,
+				"picked": 0,
+				"status": ""
+			},
+			{
+				"id": "10002",
+				"partNo": "20-5575-90-1",
+				"locator": "B.11.BC",
+				"box": 3,
+				"pieces": 2,
+				"allocated": 10,
+				"picked": 10,
+				"status": "OK"
+			}
+		]
+	}
+]

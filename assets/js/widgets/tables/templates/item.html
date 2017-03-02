@@ -1,0 +1,10 @@
+<%if(radio){var id = "<" + "%=" + id + "%" + ">";%>
+<td><input type="radio" name="selectRadio" data-id="<%=id%>"/></td>
+<%}
+
+_.each(columns, function(val, key){
+  var value = "<" + "%=" + val + "%" + ">";
+
+%>
+    <td><%=value%></td>
+<%});%>

@@ -1,0 +1,8 @@
+<%if(arr.length == 0){%>
+    <li class="active"><a><%=title%></a></li>
+<%}%>
+
+<%_.each(arr, function(obj, i){%>
+    <li data-id="<%=obj.subTypeIndex%>" class="<%if(i == 0){%>active<%}%>"><a><%=obj.subType%></a></li>
+<%});%>
+

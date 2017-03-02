@@ -1,0 +1,12 @@
+<%if(model.name == 'Home'){%>
+<a href="#home"><i class="icon-home"></i><%= model.name %></a>
+<%}else{%>
+<a href="" <%=(model.submenu)?'class="dropdown-toggle"':(!model.link.type)?'class="main-menu-item"':''%>><%= model.name %></a>
+<%if(model.submenu){%>
+<ul class="dropdown-menu" data-role="dropdown" <%=(model.location == model.link.ref)?'style="display: block;"':''%>>
+<%for(var i = 0, l = model.submenu.length; i < l; i++){ %>
+	
+                <li class="<%=(!i)?'active':''%>"><a href="" text="<%=model.submenu[i].shortName%>"><%=model.submenu[i].shortName%></a></li>
+      <%}%>     
+ </ul>           
+<%}}%>

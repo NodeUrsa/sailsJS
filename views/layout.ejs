@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- <html> -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="NetVision Warehouse Manager" />
+    <meta name="author" content="NetVision LLC" />
+    <title>NetVision Warehouse Manager™</title>
+    <link rel="stylesheet" type="text/css" href="/css/metro-bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/iconFont.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/worker.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/fullcalendar.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/jquery.timepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/nanoscroller.css"/>
+    <style type="text/css">
+        .field-has-error {
+            border-color: #e51400;
+        }
+        .span3.span3-for-column {
+            margin-right: 40px;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+</head>
+<body class="metro">
+    <script type="text/javascript">
+        var require = {
+            urlArgs: 'bust=' + (new Date()).getTime(),
+            paths: {
+                jquery              : 'libs/jquery/jquery',
+                jquery_ui           : 'libs/jquery-ui/jquery-ui.min',
+                pjquery_ui_comonents: 'libs/jquery-ui',
+                jquery_cookie       : 'libs/jquery.cookie/jquery.cookie',
+                underscore          : 'libs/underscore/underscore-min',
+                backbone            : 'libs/backbone/backbone-min',
+                backboneExt         : 'libs/backbone/backboneExt',
+                marionette          : 'libs/backbone/backbone.marionette',
+                syphon              : 'libs/backbone/backbone.syphon',
+                validation          : 'libs/backbone/backbone.validation.amd',
+                templates           : '../templates',
+                router              : 'routers/router',
+                metro               : 'libs/metro/metro',
+                moment              : 'libs/moment/moment',
+                fullcalendar        : 'libs/fullcalendar/fullcalendar',
+                nanoscroller        : 'libs/nanoscroller/nanoscroller',
+                session             : 'libs/common/session',
+                text                : 'libs/require/text',
+                timepicker          : 'libs/jquery/jquery.timepicker'
+            },
+
+            shim: {
+               'fullcalendar': {
+                    deps: ['jquery', 'jquery_ui'],
+                    exports: 'fullcalendar'
+                },
+                'nanoscroller': {
+                    deps: ['jquery'],
+                    exports: 'nanoscroller'
+                },
+                'backboneExt': {
+                    deps: ['backbone'],
+                    exports: 'backboneExt'
+                },
+                'marionette': {
+                    deps: ['backboneExt'],
+                    exports: 'marionette'
+                },
+                'jquery_ui': ['jquery'],
+
+                'timepicker': {
+                    deps: ['jquery'],
+                    exports: 'timepicker'
+                },
+                'syphon': {
+                    deps: ['marionette']
+                },
+                'validation': {
+                    deps: ['marionette', 'jquery']
+                }
+            }
+        };
+    </script>
+    <%- body %>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<div class="modal" style="overflow-y: auto; height: 550px" >
+    <div class="label">General</div>
+    <form>
+        <div class="grid">
+            <div class="row">
+                <div class="span2">Short Name:</div>
+                <input type="text" class="span3 span3-for-column" name="shortName" value="<%= model.shortName %>">
+                <div class="span2">Location Name:</div>
+                <input type="text" class="span2" name="name" value="<%= model.name %>">
+            </div>
+            <div class="row hideBlock">
+                <div class="span2">ID Number:</div>
+                <input type="text" class="span3 span3-for-column" name="branchId" disabled value="<%= model.branchId %>">
+            </div>
+            <div class="row">
+                <div class="span2">Address:</div>
+                <textarea name="address" cols="10" rows="3" class="span3 span3-for-column" style="margin-bottom: 10px"><%= model.address %></textarea>
+                <!--<input type="text" class="span2" name="address" value="<%=model.address%>">-->
+                <div class="span3 label">Hours of Operations</div>
+            </div>
+            <div class="row">
+                <div class="span2">City:</div>
+                <input type="text" class="span3 span3-for-column" name="city" value="<%= model.city %>">
+                <div class="span2">Start:</div>
+                <input type="text" class="span2" name="opsStartHour" value="<%= model.opsStartHour %>">
+            </div>
+            <div class="row">
+                <div class="span2">State:</div>
+                <input type="text" class="span3 span3-for-column" name="state" value="<%= model.state %>">
+                <div class="span2">End:</div>
+                <input type="text" class="span2" name="opsEndHour" value="<%= model.opsEndHour %>">
+            </div>
+            <div class="row">
+                <div class="span2">Zip Code:</div>
+                <input type="text" class="span3" name="zip" value="<%= model.zip %>">
+            </div>
+            <div class="row">
+                <div class="span2">Telephone:</div>
+                <input type="text" class="span3 span3-for-column" name="phone" value="<%= model.phone %>">
+                <div class="span2">Activate System:</div>
+                <div class="span2">
+                    <div class="input-control switch" data-role="input-control">
+                        <label> <input name="activateSystem" type="checkbox" <%= model.activateSystem ? 'checked' : '' %>> <span
+                                class="check"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+
+                <div class="span2" >
+                    <div class="label">Fill Rate Table</div>
+                </div>
+
+
+                <div class="span5" name="fillRateTable">
+
+                </div>
+
+
+                <div class="span2 balanceQueue">
+                    <div class="row">
+                        <div class="label">Balance Queue</div>
+                    </div>
+                    <div class="row">
+                        <div class="span1">Picking:</div>
+                        <input class="span1" name="pickPercentageQueue" type="text" value="<%= model.pickPercentageQueue %>">
+                    </div>
+                    <div class="row">
+                        <div class="span1">Packing:</div>
+                        <input class="span1" type="text" name="packPercentageQueue" value="<%= model.packPercentageQueue %>">
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="span2">Number of Docks:</div>
+                <input class="span1 span3-for-column" name="docks" type="number" value="<%= model.docks %>">
+                <div class="span2 offset2" style="display: none">Exception window:</div>
+                <div class="span2" style="display: none">
+                    <div class="input-control switch" data-role="input-control">
+                        <label> <input name="exceptionAccess" type="checkbox" <%= model.exceptionAccess ? 'checked' : '' %>> <span
+                                class="check"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row center">
+        <button class="large success span2">Save</button>
+    </div>
+</div>

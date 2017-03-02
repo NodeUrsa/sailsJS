@@ -1,0 +1,18 @@
+<td><input type="radio" name="orderType" data-id="<%=model.id%>" /></td>
+<td><%=model.orderType%></td>
+<td><%=(model.orderType == "Express")?model.orderSubType:''%></td>
+<td><%=model.name%></td>
+
+<!-- <td><%=(model.splitFlag)?'On':'Off'%></td>
+<td><%=(model.pickPackFlag)?'On':'Off'%></td>
+<td><%=(model.freightFlag)?'On':'Off'%></td>
+<td><%=(model.wrapFlag)?'On':'Off'%></td>
+<td><%=(model.binLocationFlag)?'On':'Off'%></td> -->
+
+
+<td><%=model.splitFlag%></td>
+<td><%=model.pickPackFlag%></td>
+<td><%=model.freightFlag%></td>
+<td><%=model.wrapFlag%></td>
+<td><%=model.binLocationFlag%></td>
+<td><%=model.binLocation%></td>

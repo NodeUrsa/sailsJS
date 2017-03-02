@@ -1,0 +1,286 @@
+<div class="modal">
+	<div class="label">General</div>
+	<div class="grid">
+		<div class="row">
+			<div class="span1 width70">Type:</div>
+			<div class="span2">
+                <input class="span2" type="text" READONLY name="type" value="<%if(model.orderType==1){%>Will Call<%}else if(model.orderType==2){%>Express<%}else{%>Truck<%}%>">
+   			</div>
+			<div class="span2 offset1">Description:</div>
+			<input class="span4" type="text" name="description" value="<%=model.name%>">
+		</div>
+		<div class="row">
+			<div class="span1 width70 <%if(model.orderType == 1 || model.orderType == 3){%>hideBlock<%}%>">Sub Type:</div>
+			<div class="span2">
+                <input class="span2 <%if(model.orderType == 1 || model.orderType == 3){%>hideBlock<%}%>" type="text" READONLY name="type" value="<%switch(model.orderSubType){case 0: {%>UPS<%};break;case 1: {%>Fedex<%};break;case 2: {%>OnTrac<%};break;case 3: {%>LoneStar<%};break;case 4: {%>SpeeDee<%};break;case 5: {%>BBExpress<%};break;case 6: {%>MGC<%};break;default: {%>Others<%};break;}%>">
+
+			</div>
+			
+			<div class="span2 offset1">Short Name:</div>
+			<input class="span1" type="text" name="shortName" value="<%=model.shortName%>">
+		</div>
+
+		<div class="row">
+			<div class="span4">
+				<div class="row">
+					<div class="span3">Combine Orders:</div>
+					<div class="span1">
+						<div class="input-control switch" data-role="input-control">
+							<label> <input name="combineFlag" type="checkbox" <%=(model.combineFlag)?'checked':''%>>
+								<span class="check"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="span2">
+				<div class="row">
+					<div class="span1">#Orders:</div>
+					<input type="number" class="span1" name="upToNumbOrders" value="<%=model.upToNumbOrders%>"/>
+				</div>
+			</div>
+			<div class="span2 offset3">
+				<div class="row">
+					<div class="span1">Split flag:</div>
+					<div class="span1">
+						<div class="input-control switch" data-role="input-control">
+							<label> <input type="checkbox" name="splitFlag" <%=(model.splitFlag)?'checked':''%>>
+								<span class="check"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span4">
+				<div class="row">
+					<div class="span3">Pick Pack Flag:</div>
+					<div class="span1">
+						<div class="input-control switch" data-role="input-control">
+							<label> <input name="pickPack" type="checkbox" <%=(model.pickPackFlag)?'checked':''%>> <span
+								class="check"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span3">Freight Flag:</div>
+					<div class="span1">
+						<div class="input-control switch" data-role="input-control">
+							<label> <input name="freight" type="checkbox" <%=(model.freightFlag)?'checked':''%>> <span
+								class="check"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span3">Wrap Flag:</div>
+					<div class="span1">
+						<div class="input-control switch" data-role="input-control">
+							<label> <input name="wrap" type="checkbox" <%=(model.wrapFlag)?'checked':''%>> <span
+								class="check"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span3">Multiple Packing Station:</div>
+					<div class="span1">
+						<div class="input-control switch" data-role="input-control">
+							<label> <input name="multiplePacking" type="checkbox" <%=(model.multiplePackFlag)?'checked':''%>>
+								<span class="check"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span3">Bin Assigment Flag:</div>
+					<div class="span1">
+						<div class="input-control switch" data-role="input-control">
+							<label> <input name="binsFlag" type="checkbox" <%=(model.binLocationFlag)?'checked':''%>> <span
+								class="check"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="span2">
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+
+				<div class="row">
+					<div class="span1">#Stations:</div>
+					<input type="number" class="span1" name="numberDocks" value="<%=model.numberDocks%>">
+				</div>
+				<div class="row">
+					<div class="span1">#Bins:</div>
+					<input type="number" class="span1" name="binsAvailable" value="<%=model.binLocation%>"/>
+				</div>
+			</div>
+
+			<fieldset class="span3">
+				<legend>Cut-Offs & Pickup Table</legend>
+				<table class="table striped">
+					<thead>
+						<tr>
+							<th class="text-left padding0 center">Cut-Off</th>
+							<th class="text-left padding0 center">Pickup</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="padding0 center">7:00</td>
+							<td class="padding0 center">9:30</td>
+						</tr>
+						<tr>
+							<td class="padding0 center">9:30</td>
+							<td class="padding0 center">11:00</td>
+						</tr>
+						<tr>
+							<td class="padding0 center">11:00</td>
+							<td class="padding0 center">14:00</td>
+						</tr>
+						<tr>
+							<td class="padding0 center">14:00</td>
+							<td class="padding0 center">17:00</td>
+						</tr>
+						<tr>
+							<td class="padding0 center"></td>
+							<td class="padding0 center"></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+
+
+			<fieldset class="span3" name="shipRequirement">
+				<legend>Split Requirment</legend>
+				<div class="row">
+					<input type="radio" name="requirment" /> Number of Items
+				</div>
+				<div class="row">
+					<input type="radio" name="requirment"> Cubic Feet
+				</div>
+				<div class="row">
+					<input type="radio" name="requirment"> Sales Amount
+				</div>
+				<div class="row">
+					<input class="span1" type="text" name="splitNum">
+				</div>
+			</fieldset>
+		</div>
+
+		<div class="row">
+			<div class="span3">
+				<div class="row"></div>
+				<div class="row"></div>
+
+				<div class="row">
+					<div class="span2">Activate Mix Mode:</div>
+					<div class="input-control switch" data-role="input-control">
+						<label> <input name="activateMixMode" type="checkbox" <%=(model.expressMixModeFlag)?'checked':''%>>
+							<span class="check"></span>
+						</label>
+					</div>
+				</div>
+				<div class="row"></div>
+				<div class="row">
+					<div class="span2">Mix Order Type:</div>
+					<div class="input-control switch" data-role="input-control">
+						<label> <input name="mixOrderTypeFlag" type="checkbox" <%=(model.mixOrderTypeFlag)?'checked':''%>>
+							<span class="check"></span>
+						</label>
+					</div>
+				</div>
+				<div class="row"></div>
+				<div class="row">
+					<div class="span2">Box Dimensions Flag:</div>
+					<div class="input-control switch" data-role="input-control">
+						<label> <input name="boxDimensionFlag" type="checkbox" <%=(model.boxDimensionFlag)?'checked':''%>>
+							<span class="check"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+
+			<fieldset class="span7" name="expressMixedMode">
+				<legend>Express Mixed Mode</legend>
+				<div class="row">
+					<div class="offset3 span50">Max Items</div>
+					<div class="span50 margin-left0">Max Orders</div>
+					<div class="span50 margin-left0">Max Volume</div>
+					<div class="span50 margin-left0">Quadrant</div>
+				</div>
+
+				<div class="row">
+					<div class="span1">Group 1:</div>
+					<div class="span2">up to</div>
+					<input type="number" class="span50" name="expGroup1Items" value="<%=model.expGroup1Items%>" min="0">
+					<input type="number" class="span50" name="expGroup1Orders" value="<%=model.expGroup1Orders%>">
+					<input type="text" class="span50" name="expGroup1Maxvolume" value="<%=model.expGroup1Maxvolume%>">
+				</div>
+				<div class="row">
+					<div class="span1">Group 2:</div>
+					<div class="span2">G1 < #Items <= than</div>
+					<input type="number" class="span50" name="expGroup2Items" value="<%=model.expGroup2Items%>">
+					<input type="number" class="span50" name="expGroup2Orders" value="<%=model.expGroup2Orders%>">
+					<input type="text" class="span50" name="expGroup2Maxvolume" value="<%=model.expGroup2Maxvolume%>">
+					<input type="text" class="span50" name="expGroup2Qdr" value="<%=model.expGroup2Qdr%>">
+				</div>
+				<div class="row">
+					<div class="span1">Group 3:</div>
+					<div class="span2">G2 < #Items <= than</div>
+					<input type="number" class="span50" name="expGroup3Items" value="<%=model.expGroup3Items%>">
+					<input type="number" class="span50" name="expGroup3Orders" value="<%=model.expGroup3Orders%>">
+					<input type="text" class="span50" name="expGroup3Maxvolume" value="<%=model.expGroup3Maxvolume%>">
+					<input type="text" class="span50" name="expGroup3Qdr" value="<%=model.expGroup3Qdr%>">
+				</div>
+				<div class="row">
+					<div class="span1">Group 4:</div>
+					<div class="span2">#Items > than</div>
+					<input type="text" class="span50" name="expGroup4Items" value="<%=model.expGroup4Items%>" readonly>
+					<input type="text" class="span50" name="expGroup4Orders" value="<%=model.expGroup4Orders%>">
+					<input type="text" class="span50" name="expGroup4Maxvolume" value="<%=model.expGroup4Maxvolume%>">
+					<input type="text" class="span50" name="expGroup4Qdr" value="<%=model.expGroup4Qdr%>">
+				</div>
+			</fieldset>
+
+			<fieldset class="span3">
+				<legend>Express Cut-Offs & Pickup</legend>
+				<table class="table striped">
+					<thead>
+						<tr>
+							<th class="text-left padding0 center">Cut-Off</th>
+							<th class="text-left padding0 center">Pickup</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="padding0 center">7:00</td>
+							<td class="padding0 center">9:30</td>
+						</tr>
+						<tr>
+							<td class="padding0 center">9:30</td>
+							<td class="padding0 center">11:00</td>
+						</tr>
+						<tr>
+							<td class="padding0 center"></td>
+							<td class="padding0 center"></td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+		</div>
+	</div>
+	<div class="row center">
+		<button class="large success">Save</button>
+	</div>
+</div>

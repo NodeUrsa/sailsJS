@@ -1,0 +1,324 @@
+
+<%_.each(mainArr, function(obj){%>
+
+
+<table class="printingPage">
+	<tr>
+        <td colspan="3">
+            <table width="100%">
+                <tr>
+                    <td class="companyName" colspan="2">
+                        <!--<span>GENERA</span> <span>CORPORATION</span>-->
+                        <!-- <div id="logo"></div> -->
+                        <img src="/imgs/custom/TYCLogo_genera.png" style="width: 390px;">
+                    </td>
+                    <td>
+
+                    </td>
+                    <td  align="right" rowspan="2">
+                        <div class="packing_list">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <td style="width:50%;" colspan="2">Packing List</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="border-bottom border-right" style="width:50%;"><B>ORDER NUMBER</B><BR /><%=obj.order.orderNumber%></td>
+                                    <td class="border-bottom"><B>ASN NUMBER</B><BR /><%=obj.order.deliveryNum%></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-bottom border-right"><B>DATE</B><BR /><%=moment(obj.order.updatedAt).format('DD-MMM-YY')%></td>
+                                    <td class="border-bottom pageNum" data-keyword="<%=obj.order.orderNumber%>"><B>PAGE</B><BR /><span></span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><B>PO NUMBER</B><BR /><%=obj.order.poNum%></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 230px">
+                        <div>
+                            <%=obj.order.locationInfo.name%><BR /><%=obj.order.locationInfo.address%><BR /><%=obj.order.locationInfo.city%>, <%=obj.order.locationInfo.state%>, <%=obj.order.locationInfo.zip%><br>United States
+                        </div>
+                    </td>
+                    <td align="left" class="branchIdBox">
+                        <div>
+                            <B>BIN:  </B><%=obj.order.binLocation%>
+                        </div>
+                    </td>
+                    <td>
+
+                    </td>
+
+                </tr>
+            </table>
+        </td>
+	</tr>
+	<tr class="addressRow">
+		<td colspan="2">
+			<div>BILL TO : <%=obj.order.customerNumber%><BR />
+                <%=obj.order.customerName%><BR />
+                <%if(obj.order.billToAddress1){%><%=obj.order.billToAddress1%><br><%}%>
+                <%if(obj.order.billToAddress2){%><%=obj.order.billToAddress2%><br><%}%>
+                <%if(obj.order.billToAddress3){%><%=obj.order.billToAddress3%><br><%}%>
+                <%if(obj.order.billToAddress4){%><%=obj.order.billToAddress4%><br><%}%>
+			    <%=obj.order.billToCity%>, <%=obj.order.billToState%>, <%=obj.order.billToZip%>
+			</div>
+		</td>
+		<td colspan="2">
+            <div>SHIP TO : <%=obj.order.customerNumber%><BR />
+                <%=obj.order.customerName%><BR />
+                <%if(obj.order.shipToAddress1){%><%=obj.order.shipToAddress1%><br><%}%>
+                <%if(obj.order.shipToAddress2){%><%=obj.order.shipToAddress2%><br><%}%>
+                <%if(obj.order.shipToAddress3){%><%=obj.order.shipToAddress3%><br><%}%>
+                <%if(obj.order.shipToAddress4){%><%=obj.order.shipToAddress4%><br><%}%>
+                <%=obj.order.shipToCity%>, <%=obj.order.shipToState%>, <%=obj.order.billToZip%>
+
+			</div>
+		</td>
+        <td>
+
+        </td>
+	</tr>
+	<tr>
+		<td colspan="3">
+            <div class="item_list_frame">
+				<div class="ship_via border-bottom"><B>SHIP VIA</B><BR/><%=obj.order.shipVia%></div>
+				<!--<div id="total_box" class="border-bottom"><B>TOTAL BOX</B></div>-->
+				<div class="remarks"><B>REMARKS</B><BR/><%=obj.order.remarks%></div>
+
+
+                <div class="item_list">
+					<table>
+						<thead>
+							<tr>
+								<th class="border-right-white">PALLET </BR>NO</th>
+								<th class="border-right-white">BOX</BR>ID</th>
+                                <th class="border-right-white">GENERA P/N (SUPERSEDED P/N)</th>
+                                <th class="border-right-white">BOX</BR>CNT</th>
+                                <th class="border-right-white">QTY</BR>CNT</th>
+								<th class="border-right-white">CUSTOMER P/N</th>
+								<th class="border-right-white">BIN LOCATION</th>
+							</tr>
+						</thead>
+						<tbody>
+                        <%var palletNum = "001",
+                            lineNum = 0;
+                            var break1 = 0;
+                            var boxCnt = 0;
+                            var qtyCnt = 0;
+                        _.each(obj.arr, function(line, index, arr){
+
+                        checkIfNeedHeader();
+
+                        if(line.palletNumber != palletNum){
+                            palletSub();
+                            palletNum = line.palletNumber;
+                            printSlash();
+                            lineNum++;
+                            checkIfNeedHeader();
+                            printPallet();
+                            lineNum++;
+                            checkIfNeedHeader();
+                        }
+                        printDataRow();
+                        lineNum++;
+
+                        if(index + 1 == arr.length){
+                            palletSub();
+                            printSlash();
+                            lineNum++;
+                            checkIfNeedHeader();
+                            printPallet();
+                            lineNum++;
+                            checkIfNeedHeader();
+                        }
+
+                        %>
+
+
+                        <%function checkIfNeedHeader(){
+                            if(checkLine(lineNum, obj.firstPage)){
+                                printHeader();
+                            }
+                        }%>
+
+                        <%function palletSub(){
+                            var arrPall = _.filter(obj.arr, function(obj){return obj.palletNumber == palletNum});
+                            _.each(arrPall, function(obj, index, arrPall){
+                                boxCnt = boxCnt + Number(obj.boxCnt);
+                                qtyCnt = qtyCnt + Number(obj.qtyCnt);
+                            });
+                        }%>
+
+
+                        <%function printPallet(){%>
+                            <tr>
+                                <td class="border-right smallSize"></td>
+                                <td class="border-right smallSize"></td>
+                                <td class="border-right smallSize" align="right">Pallet Subtotal </td>
+                                <td class="border-right smallSize"><%=boxCnt%></td>
+                                <td class="border-right smallSize"><%=qtyCnt%></td>
+                                <td class="border-right smallSize"></td>
+                                <td class="border-right smallSize"></td>
+                            </tr>
+                        <%} boxCnt = 0; qtyCnt = 0;%>
+
+
+
+                        <%function printSlash(){%>
+                            <tr>
+                                <td class="border-right smallSize center">--------</td>
+                                <td class="border-right smallSize center">-----</td>
+                                <td class="border-right smallSize center">----------------------------------------</td>
+                                <td class="border-right smallSize center">----</td>
+                                <td class="border-right smallSize center">----</td>
+                                <td class="border-right smallSize center">------------------</td>
+                                <td class="border-right smallSize center"></td>
+                            </tr>
+                        <%}%>
+
+
+
+                    <%function printHeader(){%>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+    </table>
+
+<h1 class="pageBreak"></h1>
+
+    <table class="printingPage" >
+        <tr>
+            <td colspan="3">
+                            <table width="100%">
+                                <tr>
+                                    <td class="companyName" colspan="2">
+                                        <!--<span>GENERA</span> <span>CORPORATION</span>-->
+                                        <!-- <div id="logo"></div> -->
+                                        <img src="/imgs/custom/TYCLogo_genera.png" style="width: 390px;">
+                                        <!--<img src="/assets/imgs/custom/company_logo.png" style="width: 300px; height: 36px;">-->
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td  align="right" rowspan="2">
+                                        <div class="packing_list">
+                                            <table>
+                                                <thead>
+                                                <tr>
+                                                    <td style="width:50%;" colspan="2">Packing List</td>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="border-bottom border-right" style="width:50%;"><B>ORDER NUMBER</B><BR /><%=obj.order.orderNumber%></td>
+                                                    <td class="border-bottom"><B>ASN NUMBER</B><BR /><%=obj.order.deliveryNum%></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-bottom border-right"><B>DATE</B><BR /><%=moment(obj.order.updatedAt).format('DD-MMM-YY')%></td>
+                                                    <td class="border-bottom pageNum" data-keyword="<%=obj.order.orderNumber%>"><B>PAGE</B><BR /><span></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"><B>PO NUMBER</B><BR /><%=obj.order.poNum%></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 230px">
+                                        <div>
+                                            <%=obj.order.locationInfo.name%><BR /><%=obj.order.locationInfo.address%><BR /><%=obj.order.locationInfo.city%>, <%=obj.order.locationInfo.state%>, <%=obj.order.locationInfo.zip%><br>United States
+                                        </div>
+                                    </td>
+                                    <td align="left" class="branchIdBox">
+                                        <div>
+                                            <B>BIN:  </B><%=obj.order.binLocation%>
+                                        </div>
+                                    </td>
+                                    <td>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+
+                            <br>
+
+
+                            <div class="item_list_frame">
+
+                                <div class="remarksDisable"></div>
+
+                                <div class="item_list">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th class="border-right-white">PALLET </BR>NO</th>
+                                            <th class="border-right-white">BOX</BR>ID</th>
+                                            <th class="border-right-white">GENERA P/N (SUPERSEDED P/N)</th>
+                                            <th class="border-right-white">BOX</BR>CNT</th>
+                                            <th class="border-right-white">QTY</BR>CNT</th>
+                                            <th class="border-right-white">CUSTOMER P/N</th>
+                                            <th class="border-right-white">BIN LOCATION</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+
+                    <%}%>
+
+
+                        <%function printDataRow(){%>
+                            <tr>
+                                <td class="border-right smallSize"><%=line.palletNumber%></td>
+                                <td class="border-right smallSize"><%=line.boxNumber%></td>
+                                <td class="border-right smallSize"><%=line.itemNumber%></td>
+                                <td class="border-right smallSize"><%=line.boxCnt%></td>
+                                <td class="border-right smallSize"><%=line.qtyCnt%></td>
+                                <td class="border-right smallSize"><%=line.customerItemNumber%></td>
+                                <td class="border-right smallSize"></td>
+                            </tr>
+                        <%}%>
+
+
+
+
+                <%});%>
+
+
+
+
+						</tbody>
+					</table>
+				</div>
+				<div class="bottom_remarks">
+
+                   <div><b style="align-content: flex-start">TOTAL: <%=parseInt(palletNum)%> PALLETS, <%=obj.order.boxCount%> BOXES, <%=obj.order.pieces%> PIECES</b></div>
+                   <div><b style="align-content: flex-end">TOTAL CBF: <%=obj.order.cbf%> CUBF, TOTAL WEIGHT: <%=obj.order.weight%> LBS</b></div>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+<h1 class="pageBreak"></h1>
+
+<%});%>

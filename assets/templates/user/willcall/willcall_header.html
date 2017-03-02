@@ -1,0 +1,29 @@
+<div class="panel_header">
+	<label class="title">Will Call Orders</label>
+	<div class="panel_buttons">
+    	<button id="button_show_header">Show Headers</button>
+    	<button id="button_item_lookup">Item Lookup</button>
+    	<button id="button_show_all"><% if(phase == 1 && filterBy == null){%>Hide Completed<%}else{%>Show All<%}%></button>
+    	<button id="button_start_picking">Start Picking</button>
+    	<button id="button_finish_phase">Finish Phase</button>
+    	<button id="button_dashboard">Dashboard</button>
+    </div>
+</div>
+<script language="javascript">
+$(document).ready(function(e) {
+	$('#button_dashboard').click(function() {
+		document.location = '#user/';
+	});
+	
+		
+	$(window).resize(function() {
+		resizeDataContentPanel();
+	});
+	
+	resizeDataContentPanel();
+});
+
+function resizeDataContentPanel() {
+	$('.data-content').height($(window).height() - 160);
+}
+</script>

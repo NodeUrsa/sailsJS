@@ -1,0 +1,12 @@
+<td><%= orderNumber %></td>
+<td><%= customerNumber %></td>
+<td><%= customerName %></td>
+<td><%= shipToCity %></td>
+<td><%= shipToState %></td>
+<td><%= orderDate %></td>
+<td><%= pickupTime %></td>
+<td><%= orderStage %></td>
+<td><%= pieces %></td>
+<td><%= binLocation %></td>
+<td><%= poNum %></td>
+<td><input type="checkbox" data-id="<%= id %>" <%if(orderStage != "Ship Ready"){%>disabled="disabled"<%}%> /></td>

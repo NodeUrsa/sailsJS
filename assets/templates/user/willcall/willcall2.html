@@ -1,0 +1,50 @@
+
+<div id="label">Batch : <%=batch.get('id')%></div>
+<div class="data-content">
+	<table class="table striped hovered">
+    	<thead>
+            <tr>
+                <th class="text-left">LN</th>
+                <th class="text-left">Order Number</th>
+                <th class="text-left">General P/N</th>
+                <th class="text-left">Locator</th>
+                <th class="text-left">Box</th>
+                <th class="text-left">Pieces</th>
+                <th class="text-left">Allocated</th>
+                <th class="text-left">Picked</th>
+                <th class="text-left">Status</th>
+            </tr>
+		</thead>
+        <tbody>
+        <% var index = 0; %>
+        <% _.each(batch.get('orders').models, function(order){ %>
+        <% _.each(order.get('items'), function(item){
+        if(filterBy == null || item.pieces > item.picked) {
+        %>
+            <tr data-id="<%=order.get('id')%>_<%=item.id%>">
+            	<td><%=(++index)%></td>
+                <td><%=order.get('id')%></td>
+                <td><%=item.partNo%></td>
+                <td><%=item.locator%></td>
+                <td><%=item.box%></td>
+                <td><%=item.pieces%></td>
+                <td><%=item.allocated%></td>
+                <td><%=item.picked%></td>
+                <td><%=item.status%></td>
+            </tr>
+        <% }
+        }); %>
+        <% }); %>
+        </tbody>
+    </table>
+</div>
+<script language="javascript">
+$(document).ready(function(e) {
+	$('#button_show_header').attr("disabled", "disabled");
+	$('#button_item_lookup').removeAttr("disabled");
+	$('#button_show_all').removeAttr("disabled");
+	$('#button_start_picking').attr("disabled", "disabled");
+	$('#button_finish_phase').removeAttr("disabled");
+	$('#button_dashboard').removeAttr("disabled");
+});
+</script>

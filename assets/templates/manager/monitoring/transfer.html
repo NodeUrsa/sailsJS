@@ -1,0 +1,69 @@
+
+<div class="modal">
+<div class="grid transferTable">
+    <h3 class="center">TRANSFER BATCH</h3>
+
+
+    <div class="row tRow1">
+        <div class="span4">
+            <div class="span2">BATCH NUMBER: </div>
+            <div class="span2"><%=model.batchNumber%></div>
+        </div>
+        <div class="span4 offset1">
+            <div class="span1">Employee: </div>
+            <div class="span2"><%if(model.user){%><%=model.user.firstName+" "+model.user.lastName%><%}%></div>
+        </div>
+    </div>
+    <br>
+    <div class="row tRow2">
+        <div class="span4 offset1">
+            <input type="radio" value="1" name="nextWorker" checked>&nbsp;Next Available Worker (Auto)
+        </div>
+        <div class="span4">
+            <div class="span4 offset1">
+                <input type="radio" value="2" name="nextWorker">&nbsp;Specific Worker
+            </div>
+        </div>
+
+    </div>
+    <div class="fence"></div>
+
+    <table class="table striped hovered">
+        <thead>
+        <tr>
+            <th class="text-left">Select</th>
+            <th class="text-left">Employee</th>
+            <th class="text-left">Order Type</th>
+            <th class="text-left">Sub Type</th>
+            <th class="text-left">Batch Number</th>
+            <th class="text-left">Est End</th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+    </table>
+
+    <div class="row center tRow3">
+        <div class="span3">Place Pallet at Position:</div>
+        <input class="span4" type="text" name="position">
+    </div>
+    <br>
+    <div class="row center">
+        <input type="checkbox" name="logOff"> Do you want to log off the current worker?
+     </div>
+
+    <button class="save">Process</button>
+    <button class="delete">Cancel</button>
+
+</div>
+
+
+
+
+
+
+
+
+</div>

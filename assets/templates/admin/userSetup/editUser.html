@@ -1,0 +1,88 @@
+<div class="label">General</div>
+<div class="grid">
+	<div class="row">
+		<div class="span2">First Name:</div>
+		<input type="text" class="span2" name="firstName" value="<%=model.firstName%>">
+        <div class="span2">Last Name:</div>
+        <input type="text" class="span2" name="lastName" value="<%= model.lastName%>">
+
+	</div>
+	<div class="row">
+        <div class="span2">UserName:</div>
+        <input type="text" class="span2" name="userName" value="<%=model.userName%>">
+		<div class="span2">User Type:</div>
+			<select name="type" class="span2">
+				<option value="1"<%= (model.role == '1') ? 'selected' : ''
+					%>>Admin</option>
+				<option value="2"<%= (model.role == '2') ? 'selected' : ''
+					%>>Manager</option>
+				<option value="3"<%= (model.role == '3') ? 'selected' : ''
+					%>>Worker</option>
+				<option value="4"<%= (model.role == '4') ? 'selected' : ''
+					%>>Call Center</option>
+				<option value="5"<%= (model.role == '5') ? 'selected' : ''
+					%>>Manager/Worker</option>
+			</select>
+	</div>
+	<% if (!model.id) { %>
+	<div class="row">
+		<div class="span2">Password:</div>
+		<input type="password" class="span2" name="password">
+		<div class="span2">Confirm Password:</div>
+		<input type="password" class="span2" name="password2">
+	</div>
+	<% } %>
+	<div class="row">
+		<div class="span2">Active:</div>
+		<div class="span2">
+			<div class="input-control switch" data-role="input-control">
+				<label> <input name="active" type="checkbox"<%=
+					(model.active) ? 'checked' : '' %>> <span class="check"></span>
+				</label>
+			</div>
+		</div>
+		<!-- <div class="span2">Reset Password:</div>
+		<div class="span1">
+			<div class="input-control switch" data-role="input-control">
+				<label> <input name="resetPass" type="checkbox"> <span
+					class="check"></span>
+				</label>
+			</div>
+		</div> -->
+	</div>
+	<div class="row"></div>
+	<div class="label">Hours of Work</div>
+	<div class="row">
+		<div class="span1">Start:</div>
+		<div class="span2">
+			<input type="text" name="hoursStart" placeholder="HH:mm"
+				value="<%=model.operationStartHour%>">
+		</div>
+		<!--div class="span2">Pick Flag:</div>
+            <div class="span1">
+                <div class="input-control switch" data-role="input-control">
+                    <label> <input name="pickFlag" type="checkbox" <%= (model.pickFlag) ? 'checked' : '' %>> <span
+                        class="check"></span>
+                    </label>
+                </div>
+            </div-->
+	</div>
+	<div class="row">
+		<div class="span1">End:</div>
+		<div class="span2">
+			<input type="text" name="hoursEnd" placeholder="HH:mm"
+				value="<%=model.operationEndHour%>">
+		</div>
+		<!--div class="span2">Pack Flag:</div>
+            <div class="span1">
+                <div class="input-control switch" data-role="input-control">
+                    <label> <input name="packFlag" type="checkbox" <%= (model.packFlag) ? 'checked' : '' %>> <span
+                        class="check"></span>
+                    </label>
+                </div>
+            </div-->
+	</div>
+</div>
+<div class="row center">
+	<button class="large success">Save</button>
+</div>

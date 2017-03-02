@@ -1,0 +1,21 @@
+{
+    "folders":
+    [
+        {
+            "name": "Client Side",
+            "follow_symlinks": true,
+            "path": "./assets/"
+        },
+        {
+            "name": "Server Side",
+            "follow_symlinks": true,
+            "path": ".",
+            "folder_exclude_patterns": ["assets", "node_modules", ".tmp"]
+        }
+    ],
+    "settings": {
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+        "detect_indentation": false
+    }
+}

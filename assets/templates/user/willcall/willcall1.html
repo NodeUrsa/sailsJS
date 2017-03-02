@@ -1,0 +1,43 @@
+<div id="label"></div>
+<div class="data-content">
+	<table class="table striped hovered">
+    	<thead>
+            <tr>
+                <th class="text-left">Order Number</th>
+                <th class="text-left">Customer ID</th>
+                <th class="text-left">Customer Name</th>
+                <th class="text-left">City</th>
+                <th class="text-left">State</th>
+                <th class="text-left">Order Date</th>
+                <th class="text-left">Release Date</th>
+                <th class="text-left">Weight</th>
+                <th class="text-left">Pieces</th>
+            </tr>
+		</thead>
+        <tbody>
+        <% _.each(orderCollections.models, function(order){ %>
+            <tr data-id="<%=order.get('id')%>">
+                <td><%=order.get('id')%></td>
+                <td><%=order.get('customerId')%></td>
+                <td><%=order.get('customerName')%></td>
+                <td><%=order.get('city')%></td>
+                <td><%=order.get('state')%></td>
+                <td><%=order.get('orderDate')%></td>
+                <td><%=order.get('releaseDate')%></td>
+                <td><%=order.get('weight')%></td>
+                <td><%=order.get('pieces')%></td>
+            </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>
+<script language="javascript">
+$(document).ready(function(e) {
+	$('#button_show_header').removeAttr("disabled");
+	$('#button_item_lookup').removeAttr("disabled");
+	$('#button_show_all').attr("disabled", "disabled");
+	$('#button_start_picking').removeAttr("disabled");
+	$('#button_finish_phase').attr("disabled", "disabled");
+	$('#button_dashboard').removeAttr("disabled");
+});
+</script>

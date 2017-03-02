@@ -1,0 +1,601 @@
+.scanner {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  bottom: 0px;
+  left: 0px;
+}
+.scanner input {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  font-size: 10px;
+}
+.scanner input:focus {
+  border: 0;
+}
+.version {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  opacity: 0.4;
+}
+#page #home,
+#page #picking,
+#page #packing {
+  height: 100%;
+}
+#page .workerPage {
+  width: 1040px;
+  margin: auto;
+}
+#page .workerPage header {
+  height: 100px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 90px;
+  text-align: center;
+}
+#page .workerPage .tile.user {
+  width: 165px;
+  margin: 4px;
+}
+#page .workerPage .tile.double-vertical.double .tile-content.icon [class*="icon-"] {
+  font-size: 150px;
+  line-height: 140px;
+  height: 150px;
+  width: 150px;
+  margin-top: -80px;
+  margin-left: -75px;
+}
+#page .workerPage .locations {
+  margin-bottom: 20px;
+}
+#page .workerPage .locations button:first-child {
+  min-width: 180px;
+  margin-left: 4px;
+}
+#page .workerPage .locations button:last-child {
+  margin-right: 4px;
+}
+#page .workerPage .locations button:not(:first-child) {
+  margin-left: 10px;
+  min-width: 158px;
+}
+#page .workerPageHome {
+  color: #fff;
+  font-weight: bold;
+  height: 100%;
+  padding: 1% 7%;
+}
+#page .workerPageHome header {
+  font-size: 25px;
+  height: 40px;
+}
+#page .workerPageHome .menu {
+  height: -webkit-calc(100% - 80px);
+  height: -moz-calc(100% - 80px);
+  height: calc(100% - 80px);
+}
+#page .workerPageHome .menu .item {
+  width: -webkit-calc(33.3% - 6px);
+  width: -moz-calc(33.3% - 6px);
+  width: calc(33.3% - 6px);
+  height: -webkit-calc(50% - 6px);
+  height: -moz-calc(50% - 6px);
+  height: calc(50% - 6px);
+  margin: 3px;
+  float: left;
+  cursor: pointer;
+  padding-left: 15px;
+}
+#page .workerPageHome .menu .item i {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-top: 10%;
+  display: block;
+  line-height: inherit;
+  background-image: url(/imgs/custom/adminIcons.png);
+  background-size: 370%;
+  background-repeat: no-repeat;
+}
+#page .workerPageHome .menu .item .label {
+  background: none;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 8%;
+}
+#page .workerPageHome .menu .item .title {
+  margin-top: 40px;
+  font-size: 20px;
+  height: -webkit-calc(100% - 134px);
+  height: -moz-calc(100% - 134px);
+  height: calc(100% - 134px);
+}
+#page .workerPageHome .menu .item:nth-child(1) {
+  background-color: #9FC5F8;
+}
+#page .workerPageHome .menu .item:nth-child(2) {
+  background-color: #009E0F;
+}
+#page .workerPageHome .menu .item:nth-child(3) {
+  background-color: #E69138;
+}
+#page .workerPageHome .menu .item:nth-child(4) {
+  background-color: #6FA8DC;
+}
+#page .workerPageHome .menu .item:nth-child(5) {
+  background-color: #8E7CC3;
+}
+#page .workerPageHome .menu .item:nth-child(6) {
+  background-color: #CCCCCC;
+}
+#page .workerPageHome footer {
+  font-size: 35px;
+  text-align: right;
+  height: 40px;
+}
+#page .workerPageHome footer .btn-shutdown {
+  width: 50px;
+  float: right;
+  cursor: pointer;
+}
+#page .workerPageMain {
+  height: 100%;
+}
+#page .workerPageMain header,
+#page .workerPageMain footer {
+  color: #fff;
+  height: 110px;
+}
+#page .workerPageMain header .buttons,
+#page .workerPageMain footer .buttons {
+  float: right;
+}
+#page .workerPageMain header .buttons .btn,
+#page .workerPageMain footer .buttons .btn {
+  float: left;
+  margin: 10px;
+  height: 90px;
+  width: 90px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#page .workerPageMain header .buttons .btn .icon,
+#page .workerPageMain footer .buttons .btn .icon {
+  height: 70px;
+  background-image: url(/imgs/custom/adminIcons.png);
+  background-size: 260%;
+  background-repeat: no-repeat;
+}
+#page .workerPageMain header .buttons .btn .lable,
+#page .workerPageMain footer .buttons .btn .lable {
+  background: none;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+}
+#page .workerPageMain header .buttons .btn.item-lookup .icon,
+#page .workerPageMain footer .buttons .btn.item-lookup .icon {
+  background-position: 13px -257px;
+}
+#page .workerPageMain header .buttons .btn.show-all .icon,
+#page .workerPageMain footer .buttons .btn.show-all .icon {
+  background-position: 13px -257px;
+}
+#page .workerPageMain header .buttons .btn.show-header,
+#page .workerPageMain footer .buttons .btn.show-header,
+#page .workerPageMain header .buttons .btn.pause,
+#page .workerPageMain footer .buttons .btn.pause,
+#page .workerPageMain header .buttons .btn.finish-phase,
+#page .workerPageMain footer .buttons .btn.finish-phase,
+#page .workerPageMain header .buttons .btn.freight,
+#page .workerPageMain footer .buttons .btn.freight,
+#page .workerPageMain header .buttons .btn.bin-location,
+#page .workerPageMain footer .buttons .btn.bin-location,
+#page .workerPageMain header .buttons .btn.box-mode,
+#page .workerPageMain footer .buttons .btn.box-mode,
+#page .workerPageMain header .buttons .btn.pallet_mode,
+#page .workerPageMain footer .buttons .btn.pallet_mode {
+  text-align: center;
+}
+#page .workerPageMain header .buttons .btn.show-header i,
+#page .workerPageMain footer .buttons .btn.show-header i,
+#page .workerPageMain header .buttons .btn.pause i,
+#page .workerPageMain footer .buttons .btn.pause i,
+#page .workerPageMain header .buttons .btn.finish-phase i,
+#page .workerPageMain footer .buttons .btn.finish-phase i,
+#page .workerPageMain header .buttons .btn.freight i,
+#page .workerPageMain footer .buttons .btn.freight i,
+#page .workerPageMain header .buttons .btn.bin-location i,
+#page .workerPageMain footer .buttons .btn.bin-location i,
+#page .workerPageMain header .buttons .btn.box-mode i,
+#page .workerPageMain footer .buttons .btn.box-mode i,
+#page .workerPageMain header .buttons .btn.pallet_mode i,
+#page .workerPageMain footer .buttons .btn.pallet_mode i {
+  height: 69px;
+  width: 70px;
+  margin: auto;
+  font-size: 67px;
+}
+#page .workerPageMain header .buttons .btn.disable,
+#page .workerPageMain footer .buttons .btn.disable {
+  opacity: 0.3;
+}
+#page .workerPageMain header .info,
+#page .workerPageMain footer .info {
+  float: left;
+  font-size: 17px;
+  padding-top: 55px;
+}
+#page .workerPageMain header .info {
+  font-size: 20px;
+  padding-top: 45px;
+}
+#page .workerPageMain content {
+  height: -webkit-calc(100% - 230px);
+  height: -moz-calc(100% - 230px);
+  height: calc(100% - 230px);
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#page .workerPageMain content .table {
+  margin: 0px;
+}
+#page .workerPageMain content .table td,
+#page .workerPageMain content .table th {
+  font-size: 34px;
+}
+#page .workerPageMain content > div {
+  height: 100%;
+}
+#page .workerPageMain content > div table {
+  width: 100%;
+}
+#page .workerPageMain content > div table tr th {
+  padding: 8px;
+  text-align: left;
+}
+#page .workerPageMain content > div table tr th i {
+  height: 18px;
+  vertical-align: -17%;
+}
+#page .workerPageMain content > div table tr td:nth-child(1),
+#page .workerPageMain content > div table tr td:nth-child(2),
+#page .workerPageMain content > div table tr th:nth-child(1),
+#page .workerPageMain content > div table tr th:nth-child(2) {
+  width: 25%;
+}
+#page .workerPageMain content > div table tr td:nth-child(3),
+#page .workerPageMain content > div table tr td:nth-child(4),
+#page .workerPageMain content > div table tr td:nth-child(5),
+#page .workerPageMain content > div table tr td:nth-child(6),
+#page .workerPageMain content > div table tr td:nth-child(7),
+#page .workerPageMain content > div table tr th:nth-child(3),
+#page .workerPageMain content > div table tr th:nth-child(4),
+#page .workerPageMain content > div table tr th:nth-child(5),
+#page .workerPageMain content > div table tr th:nth-child(6),
+#page .workerPageMain content > div table tr th:nth-child(7) {
+  width: 10%;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+#page .workerPageMain content > div .table-wraper {
+  height: -webkit-calc(100% - 35px);
+  height: -moz-calc(100% - 35px);
+  height: calc(100% - 35px);
+  background: #fff;
+}
+#page .workerPageMain content > div .table-wraper table {
+  margin-bottom: 0px;
+}
+#page .workerPageMain content > div .table-wraper:not(.has-scrollbar) .nano-content {
+  right: -20px;
+}
+#page .workerPageMain footer {
+  border-top: 1px solid #fff;
+}
+#page .workerPageMain footer .info {
+  cursor: pointer;
+  padding-top: 0;
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  width: 100px;
+  border-bottom-left-radius: 50px 11px;
+  border-bottom-right-radius: 50px 11px;
+  border-top-left-radius: 50px 11px;
+  border-top-right-radius: 50px 11px;
+}
+#page.packPage .workerPageMain header {
+  height: 110px;
+}
+#page.packPage .workerPageMain header .info {
+  font-size: 20px;
+  padding-top: 19px;
+}
+#page.packPage .workerPageMain content table td:nth-child(1),
+#page.packPage .workerPageMain content table th:nth-child(1) {
+  width: 58%;
+}
+#page.packPage .workerPageMain content table td:nth-child(2),
+#page.packPage .workerPageMain content table td:nth-child(3),
+#page.packPage .workerPageMain content table td:nth-child(4),
+#page.packPage .workerPageMain content table td:nth-child(5),
+#page.packPage .workerPageMain content table th:nth-child(2),
+#page.packPage .workerPageMain content table th:nth-child(3),
+#page.packPage .workerPageMain content table th:nth-child(4),
+#page.packPage .workerPageMain content table th:nth-child(5) {
+  width: 8%;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+#page.packPage .workerPageMain content .table-wraper {
+  height: -webkit-calc(100% - 100px);
+  height: -moz-calc(100% - 100px);
+  height: calc(100% - 100px);
+  background: #fff;
+}
+#page.packPage .workerPageMain content .table-wraper.big {
+  height: -webkit-calc(100% - 350px);
+  height: -moz-calc(100% - 350px);
+  height: calc(100% - 350px);
+}
+#page.packPage .workerPageMain content .header {
+  background-color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+#page.packPage .workerPageMain content .header .row {
+  border-bottom: 1px solid #000;
+}
+#page.packPage .workerPageMain content .header .row .column {
+  float: left;
+  padding: 5px;
+}
+#page.packPage .workerPageMain content .header.small .row {
+  height: 130px;
+}
+#page.packPage .workerPageMain content .header.small .row .column {
+  overflow: hidden;
+}
+#page.packPage .workerPageMain content .header.small .row .column:first-child,
+#page.packPage .workerPageMain content .header.small .row .column:nth-child(2),
+#page.packPage .workerPageMain content .header.small .row .column:nth-child(5),
+#page.packPage .workerPageMain content .header.small .row .column:nth-child(6) {
+  width: 225px;
+}
+#page.packPage .workerPageMain content .header.small .row .column:nth-child(2) {
+  width: -webkit-calc(100% - 835px);
+  width: -moz-calc(100% - 835px);
+  width: calc(100% - 835px);
+}
+#page.packPage .workerPageMain content .header.small .row .column:nth-child(3) {
+  width: 470px;
+}
+#page.packPage .workerPageMain content .header.small .row .column:nth-child(3) > div {
+  word-wrap: break-word;
+  overflow: hidden;
+  height: 59px;
+}
+#page.packPage .workerPageMain content .header.small .row .column:nth-child(4) {
+  width: 120px;
+}
+.modal.worker {
+  font-size: 26px;
+}
+.modal.worker button {
+  width: 160px;
+  height: 80px;
+  font-size: 40px !important;
+}
+.modal.worker p {
+  line-height: 28px;
+  font-size: 26px;
+}
+.modal .loginBox {
+  background-color: #fff;
+  height: -webkit-calc(100% + 42px);
+  margin: -21px;
+}
+.modal .loginBox .buttons {
+  width: 362px;
+  height: 362px;
+}
+.modal .loginBox .buttons .tile {
+  margin: 0px;
+  box-shadow: none;
+}
+.modal .loginBox .buttons .tile .icon i {
+  border: 3px solid #666666;
+  border-radius: 40px;
+  line-height: 54px;
+  color: #666666;
+  height: 70px;
+  width: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+}
+.modal .loginBox .buttons .tile:hover {
+  outline: none;
+}
+.modal.bin-location .table-wraper {
+  height: 250px;
+  margin-bottom: 10px;
+}
+.modal.bin-location table th,
+.modal.bin-location table td {
+  width: -webkit-calc(100% / 3);
+  width: -moz-calc(100% / 3);
+  width: calc(100% / 3);
+  text-align: center;
+  font-size: 26px;
+}
+.modal.select-bin-location {
+  /*button{
+    		width: 160px;
+			height: 80px;
+			font-size: 40px;
+    	}*/
+}
+.modal.select-bin-location .rings-buttons-box,
+.modal.select-bin-location .buttons-box {
+  width: 630px;
+  margin: auto;
+  height: 252px;
+}
+.modal.select-bin-location .rings-buttons-box .tile,
+.modal.select-bin-location .buttons-box .tile {
+  margin: 3px;
+  background: none;
+  text-align: center;
+  font-size: 80px;
+}
+.modal.select-bin-location .rings-buttons-box .tile:active,
+.modal.select-bin-location .buttons-box .tile:active {
+  background-color: #60a917;
+}
+.modal.select-bin-location .rings-buttons-box .tile:hover,
+.modal.select-bin-location .buttons-box .tile:hover {
+  outline: none;
+}
+.modal.select-bin-location .rings-buttons-box .tile {
+  border: 3px solid #4f4f4f;
+  border-radius: 90px;
+  color: #4f4f4f;
+}
+.modal.select-bin-location .buttons-box {
+  height: 140px;
+  width: 560px;
+}
+.modal.select-bin-location .buttons-box .tile {
+  background-color: #4f4f4f;
+  border-radius: 15px;
+  color: #fff;
+  margin: 10px;
+}
+.modal.select-bin-location .inputs-box {
+  width: 196px;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 40px;
+  height: 80px;
+}
+.modal.select-bin-location .inputs-box .quantity-field {
+  width: 80px;
+  margin: auto;
+  float: none;
+}
+.modal.select-bin-location .inputs-box > div {
+  float: left;
+  width: 80px;
+}
+.modal.select-bin-location .inputs-box > div input {
+  width: 80px;
+  text-align: center;
+  height: 50px;
+}
+.modal.select-bin-location .inputs-box > div:nth-child(2) {
+  width: 13px;
+  margin: 0px 8px;
+}
+.modal.box-mode .tile {
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 28px;
+  display: table;
+  cursor: pointer;
+}
+.modal.box-mode .tile:hover {
+  outline: none;
+}
+.modal.box-mode .tile > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 26px;
+}
+.modal.box-mode .tile.disable {
+  cursor: default;
+  opacity: 0.3;
+}
+.modal.box-mode .table-title {
+  line-height: 29px;
+}
+.modal.box-mode table.table {
+  margin-bottom: 0px;
+}
+.modal.box-mode table.table td,
+.modal.box-mode table.table th {
+  width: -webkit-calc(100% / 3);
+  width: -moz-calc(100% / 3);
+  width: calc(100% / 3);
+  width: 33.3%;
+  font-size: 26px;
+}
+.modal.box-mode .table-wraper {
+  height: 100px;
+}
+.modal .header {
+  background-color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.modal .header .row {
+  border-bottom: 1px solid #000;
+}
+.modal .header .row .column {
+  float: left;
+  padding: 5px;
+}
+.modal .header.big {
+  font-size: 26px;
+}
+.modal .header.big .row {
+  min-height: 50px;
+}
+.modal .header.big .row.remark {
+  padding: 5px;
+}
+.modal .header.big .row:first-child > .column {
+  /*width:33.3%;*/
+  height: 200px;
+}
+.modal .header.big .row:first-child > .column:nth-child(1),
+.modal .header.big .row:first-child > .column:nth-child(2) {
+  width: 30%;
+}
+.modal .header.big .row:first-child > .column:not( :nth-child(3)) {
+  border-right: 1px solid #000;
+}
+.modal .header.big .row:first-child > .column:nth-child(3) {
+  width: 40%;
+}
+.modal .header.big .row:first-child > .column:nth-child(3) > .column {
+  padding-top: 0px;
+  width: 50%;
+}
+.modal .header.big .row:first-child > .column .column {
+  padding-left: 0px;
+}
+.modal .header.big .row:last-child .column {
+  width: 30%;
+}
+.modal .header.big .row:nth-child(2) .column {
+  width: 30%;
+}
+.modal .header.big .row:nth-child(2) .column:nth-child(3) {
+  width: 40%;
+}

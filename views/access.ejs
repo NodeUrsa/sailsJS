@@ -1,0 +1,45 @@
+<style type="text/css">
+    .login-screen {
+        color: #fff;
+    }
+    .login-screen header {
+        height: 100px;
+        font-size: 40px;
+        line-height: 90px;
+        text-align: center;
+    }
+    .login-screen .centered-box {
+        /* border:1px solid black; */
+        width: 230px;
+        height: 100px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -115px;
+    }
+</style>
+<div id="checkEquipment">
+    <div class="form-line center">
+        <% if(token_inactive) { %>
+            <h2 class="offset0">Your token is inactive. Please contact your manager.</h2>
+        <% } else { %>
+            <h2 class="offset0">Enter your token:</h2>
+            <div class="input">
+                <div data-name="otp-code-block" >
+                    <input type="text" class="input-section" maxlength="2" tabindex="1" placeholder="XX">
+                    <input type="text" class="input-section" maxlength="2" tabindex="2" placeholder="XX">
+                    <input type="text" class="input-section" maxlength="2" tabindex="3" placeholder="XX">
+                </div>
+            </div>
+        </div>
+        <div class="row center">
+            <button class="large success">Submit</button>
+        </div>
+        <% } %>
+</div>
+<script type="text/javascript" src="/js/libs/jquery/jquery.js"></script>
+<% if(!token_inactive) { %>
+<script type="text/javascript" src="/js/checkEquipment.js"></script>
+<% } %>
+

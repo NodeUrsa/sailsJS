@@ -1,0 +1,18 @@
+<div class="data-content">
+	<table class="table striped hovered">
+    	<thead>
+            <tr>
+                <th class="text-left">Order Number</th>
+                <th class="text-left">Bin Location Number</th>
+            </tr>
+		</thead>
+        <tbody>
+        <% _.each(orders.models, function(order){ %>
+            <tr data-id="<%=order.get('id')%>">
+                <td><%=order.get('id')%></td>
+                <td><%=order.get('binLocation')%></td>
+            </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>

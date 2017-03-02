@@ -1,0 +1,31 @@
+<div class="info">
+	<div>Order Type: <%= orderType %></div>
+	<div>Batch: <%= model.masterBatchId %></div>
+	<div class="count">Order <%= countInfo.curOrder || 0%> of <%= model.ordersCount || 0%></div>
+</div>
+<div class="buttons">
+	<%if(orderType == 'Will Call' && info.binLocationFlag){%>
+	<div class="btn bin-location" action="bin_location">
+		<i class="icon-folder-2"></i>
+		<div class="lable">Bin Location</div>
+	</div>
+	<%}%>
+	<%if(info.freightFlag){%>
+	<div class="btn freight" action="freight">
+		<i class="icon-cart"></i>
+		<div class="lable">Freight</div>
+	</div>
+	<%}%>
+	<div class="btn show-header" action="show_header">
+		<i class="icon-book"></i>
+		<div class="lable">Show Header</div>
+	</div>
+	<div class="btn item-lookup disable" action="item_lookup">
+		<div class="icon"></div>
+		<div class="lable">Item Lookup</div>
+	</div>
+	<div class="btn show-all" action="show_all">
+		<div class="icon"></div>
+		<div class="lable"><%=(showAll)?'Hide Processed':'Show All'%></div>
+	</div>
+</div>

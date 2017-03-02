@@ -1,0 +1,60 @@
+
+<div class="modal">
+    <div class="grid transferTable">
+        <h3 class="center">EXCEPTION BATCH ASSIGNMENT</h3>
+
+
+        <div class="row tRow1">
+            <div class="span4">
+                <div class="span2">ORDER NUMBER: </div>
+                <div class="span2"><%=model.orderNumber%></div>
+            </div>
+        </div>
+        <br>
+        <div class="row tRow2">
+            <div class="span4 offset1">
+                <input type="radio" value="1" name="nextWorker" disabled>&nbsp;Next Available Worker (Auto)
+            </div>
+            <div class="span4">
+                <div class="span4 offset1">
+                    <input type="radio" value="2" name="nextWorker" checked>&nbsp;Specific Worker
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row" style="margin-left: 30px">
+            Worker Available:
+        </div>
+        <br>
+
+
+        <table class="table striped hovered">
+            <thead>
+            <tr>
+                <th class="text-left">Select</th>
+                <th class="text-left">Employee</th>
+                <th class="text-left">Order Type</th>
+                <th class="text-left">Sub Type</th>
+                <th class="text-left">Batch Number</th>
+                <th class="text-left">Est End</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+
+        <button class="save">Process</button>
+        <button class="delete">Cancel</button>
+    </div>
+
+
+
+
+
+
+
+
+</div>

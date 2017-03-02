@@ -1,0 +1,1309 @@
+.capitalize {
+  text-transform: capitalize;
+}
+.center {
+  text-align: center !important;
+}
+.centered {
+  float: none !important;
+  margin: 0 !important;
+  margin: auto !important;
+}
+.middle {
+  vertical-align: middle !important;
+}
+table.center td {
+  text-align: center !important;
+}
+.clear {
+  clear: both;
+}
+.padding0 {
+  padding: 0 !important;
+}
+.padding-left10 {
+  padding-left: 10px;
+}
+.padding-left20 {
+  padding-left: 20px;
+}
+.margin0 {
+  margin: 0 !important;
+}
+.margin-left0 {
+  margin-left: 0 !important;
+}
+.margin-bottom15 {
+  margin-bottom: 15px;
+}
+.full-width {
+  width: 100%;
+}
+.disnone {
+  display: none;
+}
+#page {
+  height: 100%;
+}
+#page .bg-none {
+  background-color: inherit;
+}
+#page .adminHomePage {
+  height: 100%;
+  margin: -20px;
+}
+#page .adminHomePage .tile-container {
+  width: 900px;
+  margin: auto;
+}
+#page .adminHomePage .tile-container .tile:hover {
+  outline: none;
+}
+#page .adminHomePage .tile-container .tile {
+  margin: 25px;
+  text-align: center;
+  box-shadow: none;
+}
+#page .adminHomePage .tile-container .tile i {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin: auto;
+  line-height: inherit;
+  font-size: 14px;
+  background-image: url(/imgs/custom/adminIcons.png);
+  background-repeat: no-repeat;
+}
+#page .adminHomePage .tile-container .tile i.location {
+  background-position: -1px 0px;
+}
+#page .adminHomePage .tile-container .tile i.user-setup {
+  background-position: -1px -209px;
+}
+#page .adminHomePage .tile-container .tile i.order-types {
+  background-position: -1px -835px;
+}
+#page .adminHomePage .tile-container .tile i.order-matrix {
+  background-position: -1px -412px;
+}
+#page .adminHomePage .tile-container .tile i.reports {
+  background-position: -1px -629px;
+}
+#page .adminHomePage .tile-container .tile i.security {
+  background-position: -245px -437px;
+}
+#page .adminHomePage .tile-container .tile i.calendar {
+  background-position: -503px -2px;
+  border: 0;
+}
+#page .adminHomePage .tile-container .tile .name {
+  margin-right: 5px;
+  font-size: 20px;
+}
+#page .adminHomePage header {
+  height: 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 40px;
+  line-height: 90px;
+  text-align: center;
+}
+#page .adminPage {
+  margin: -20px;
+  height: 100%;
+}
+#page .adminPage > header {
+  height: 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 40px;
+  line-height: 90px;
+  text-align: center;
+}
+#page .adminPage > header i {
+  width: 90px;
+  height: 90px;
+  display: block;
+  position: absolute;
+  margin-left: 40px;
+  background-color: #5265b4;
+}
+#page .adminPage > header i .icon {
+  height: 70px;
+  background-image: url(/imgs/custom/adminIcons.png);
+  background-size: 290%;
+  background-repeat: no-repeat;
+}
+#page .adminPage > header i .lable {
+  height: 20px;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+}
+#page .adminPage > header i.locations .icon {
+  background-position: 14px 3px;
+  background-size: 270%;
+}
+#page .adminPage > header i.user_setup .icon {
+  background-position: 11px -72px;
+}
+#page .adminPage > header i.order_types .icon {
+  background-position: 12px -289px;
+}
+#page .adminPage > header i.calendar {
+  border: 0;
+}
+#page .adminPage > header i.calendar .icon {
+  background-position: -164px -1px;
+}
+#page .adminPage > header i.monitoring .icon {
+  background-position: 11px -142px;
+}
+#page .adminPage > nav {
+  padding: 20px;
+  width: 200px;
+  float: left;
+}
+#page .adminPage .adminContent {
+  border-left: 1px solid #fff;
+  height: -webkit-calc(100% - 90px);
+  float: left;
+  width: -webkit-calc(100% - 200px);
+  width: -moz-calc(100% - 200px);
+  width: calc(100% - 200px);
+}
+#page .adminPage .adminContent .tab-wraper {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView {
+  height: -webkit-calc(100% - 100px);
+  height: -moz-calc(100% - 100px);
+  height: calc(100% - 100px);
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames .frame {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames .frame .grid {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames .frame .grid thead {
+  border-bottom: 1px solid #000000;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames .frame .grid thead tr {
+  display: table-row;
+  text-align: left;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames .frame .grid thead tr th {
+  border: 0px;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames .frame .grid .table-wraper tbody td {
+  text-align: left;
+  border: 0px;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames .frame .grid .table-wraper tbody td:first-child {
+  text-align: center;
+}
+#page .adminPage .adminContent .tab-wraper .monitoring .tabView .tab-control .frames .frame .grid .table-wraper tbody td:nth-child(8) {
+  padding-left: 18px;
+}
+#page .adminPage .adminContent .tab-wraper .contentCallCenter {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .contentCallCenter .tabView .tab-control {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .contentCallCenter .tabView .tab-control .frames {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .contentCallCenter .tabView .tab-control .frames .frame {
+  height: 100%;
+}
+#page .adminPage .adminContent .tab-wraper .contentCallCenter .tabView .tab-control .frames .frame .grid {
+  height: 100%;
+}
+#page .adminPage .adminContent header {
+  border: 0px;
+  height: 120px;
+}
+#page .adminPage .adminContent header .btn {
+  float: left;
+  margin: 20px;
+  height: 90px;
+  width: 90px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#page .adminPage .adminContent header .btn .icon {
+  height: 70px;
+  background-image: url(/imgs/custom/adminIcons.png);
+  background-size: 260%;
+  background-repeat: no-repeat;
+}
+#page .adminPage .adminContent header .btn .lable {
+  background: none;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+}
+#page .adminPage .adminContent header .btn.add-location .icon {
+  background-position: 16px 7px;
+}
+#page .adminPage .adminContent header .btn.edit-location .icon {
+  background-position: 16px 7px;
+}
+#page .adminPage .adminContent header .btn.delete-location .icon {
+  background-position: 16px 7px;
+}
+#page .adminPage .adminContent header .btn.add-user .icon {
+  background-position: -64px -62px;
+}
+#page .adminPage .adminContent header .btn.edit-user .icon {
+  background-position: -63px 5px;
+}
+#page .adminPage .adminContent header .btn.delete-user .icon {
+  background-position: -141px -65px;
+}
+#page .adminPage .adminContent header .btn.reset-password .icon {
+  background-position: -64px -132px;
+}
+#page .adminPage .adminContent header .btn.add-order-type .icon {
+  background-position: -62px -263px;
+}
+#page .adminPage .adminContent header .btn.edit-order-type .icon {
+  background-position: -62px -199px;
+}
+#page .adminPage .adminContent header .btn.add-matrix-item .icon {
+  background-position: -62px -199px;
+}
+#page .adminPage .adminContent header .btn.update-order-matrix .icon {
+  background-position: -62px -199px;
+}
+#page .adminPage .adminContent header .btn.update-order-matrix .lable {
+  width: 120px;
+}
+#page .adminPage .adminContent header .btn.delete-order-type .icon {
+  background-position: -62px -199px;
+}
+#page .adminPage .adminContent header .btn.delete-order-type .lable {
+  width: 120px;
+}
+#page .adminPage .adminContent header .btn.disable {
+  opacity: 0.3;
+}
+#page .adminPage .adminContent .data-content .label {
+  margin-top: 20px;
+}
+#page .adminPage .adminContent .data-content .fullcalendar {
+  margin-top: 20px;
+  height: 100%;
+  padding: 15px;
+  background-color: #fff;
+}
+#page .adminPage .adminContent .data-content .button-set {
+  margin-top: 20px;
+}
+#page .adminPage .adminContent .data-content .tab-control {
+  margin-top: 20px;
+}
+#page .adminPage .adminContent .data-content .tab-control .frames .frame {
+  background: #fff;
+}
+#page .adminPage .adminContent .data-content .tab-control .frames .frame .grid {
+  margin-bottom: 0px;
+}
+#page .adminPage .adminContent .data-content .fc-icon {
+  font-family: "Courier New", Courier, monospace !important;
+}
+#page .adminPage .adminContent .data-content .fc-view table {
+  padding: 0;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header {
+  height: 105px;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .labelMonitoring {
+  margin-left: 8%!important;
+  color: grey;
+  font-size: 16px;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .row {
+  margin: 0;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .radio {
+  font-size: 18px;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .radio input {
+  width: 15px;
+  height: 15px;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .boldText {
+  font-size: 16px;
+  font-weight: bold;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .span:last-child {
+  border-right: 0;
+  width: 28%;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .span115 {
+  width: 120px;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .buttons-box {
+  padding-left: 86px;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .buttons-box button {
+  width: 119px;
+  height: 90px;
+  background: none;
+  cursor: pointer;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes header .buttons-box button i {
+  width: 75px;
+  height: 64px;
+  display: block;
+  font-size: 50px;
+  color: #4F4F4F;
+  margin: auto;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content {
+  height: -webkit-calc(100% - 140px);
+  height: -moz-calc(100% - 140px);
+  height: calc(100% - 140px);
+  display: block;
+  margin-top: 45px;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content .table-box {
+  border: 1px solid #000;
+  height: 100%;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content .table-box table th {
+  padding: 0px;
+  cursor: pointer;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content .table-box table th:not(:last-child) {
+  border-right: 1px solid #000;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content .table-wraper {
+  height: -webkit-calc(100% - 30px);
+  height: -moz-calc(100% - 30px);
+  height: calc(100% - 30px);
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content .table-wraper table td {
+  min-width: 66px;
+  padding: 0px;
+  vertical-align: middle;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content .table-wraper table td .empty-table {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin-top: -15px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 90px;
+  color: #ccc;
+  border-top: 1px solid #000;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content .table-wraper table td:first-child {
+  text-align: center;
+}
+#page .adminPage .adminContent .data-content .frames .orderTypes content .table-wraper table td:not(:last-child) {
+  border-right: 1px solid #000;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header {
+  height: 105px;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .row {
+  margin-top: 10px;
+  min-height: 19px;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .boldText {
+  font-size: 16px;
+  font-weight: bold;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .span {
+  height: 135px;
+  border-right: 1px solid black;
+  float: left;
+  font-size: 20px;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .span:last-child {
+  border-right: 0;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .icon-undo,
+#page .adminPage .adminContent .data-content .frames .callCenter header .icon-cancel,
+#page .adminPage .adminContent .data-content .frames .callCenter header .icon-arrow-down-3,
+#page .adminPage .adminContent .data-content .frames .callCenter header .icon-list,
+#page .adminPage .adminContent .data-content .frames .callCenter header .icon-enter {
+  font-size: 60px;
+  margin-bottom: 12px;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .span115 {
+  width: 120px;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .buttons-box {
+  width: 242px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .buttons-box button {
+  width: 119px;
+  height: 90px;
+  background: none;
+  cursor: pointer;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter header .buttons-box button i {
+  width: 75px;
+  height: 64px;
+  display: block;
+  font-size: 50px;
+  color: #4F4F4F;
+  margin: auto;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter content {
+  height: 100%;
+  display: block;
+}
+#page .adminPage .adminContent .data-content .frames .callCenter content .table-box {
+  border: 1px solid #000;
+  height: 100%;
+  margin-top: 45px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header {
+  height: 105px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .radio {
+  font-size: 18px;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .radio input {
+  width: 15px;
+  height: 15px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .row {
+  margin: 0;
+  padding: 0;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .labelException {
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 15px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .span {
+  height: 135px;
+  border-right: 1px solid black;
+  float: left;
+  font-size: 20px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .span:last-child {
+  border-right: 0;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .icon-undo,
+#page .adminPage .adminContent .data-content .frames .exception header .icon-cancel,
+#page .adminPage .adminContent .data-content .frames .exception header .icon-arrow-down-3,
+#page .adminPage .adminContent .data-content .frames .exception header .icon-list,
+#page .adminPage .adminContent .data-content .frames .exception header .icon-enter {
+  font-size: 60px;
+  margin-bottom: 12px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .span115 {
+  width: 120px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .buttons-box {
+  width: 242px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .buttons-box button {
+  width: 119px;
+  height: 90px;
+  background: none;
+  cursor: pointer;
+}
+#page .adminPage .adminContent .data-content .frames .exception header .buttons-box button i {
+  width: 75px;
+  height: 64px;
+  display: block;
+  font-size: 50px;
+  color: #4F4F4F;
+  margin: auto;
+}
+#page .adminPage .adminContent .data-content .frames .exception content {
+  display: block;
+}
+#page .adminPage .adminContent .data-content .frames .exception content .table-box {
+  height: 75%;
+  border: 1px solid #000;
+  margin-top: 75px;
+}
+#page .adminPage .adminContent .data-content.monitoring .button-set button {
+  width: 19.796%;
+}
+.modal {
+  font-size: 14px;
+}
+.modal .width70 {
+  width: 70px !important;
+}
+.modal fieldset {
+  border: 1px solid #ddd;
+  padding: 1.11111rem;
+  margin: 0;
+}
+.modal fieldset legend {
+  font-weight: bold;
+  background: #fff;
+  padding: 0 0.16667rem;
+  margin: 0;
+  margin-left: -0.16667rem;
+  width: inherit;
+  border-bottom: 0;
+  font-size: 14px;
+}
+.modal .grid .row {
+  margin-top: 0px;
+  min-height: 30px;
+}
+.modal .grid .row [class*="span"] {
+  margin-left: 12px;
+}
+.modal .grid .row label {
+  margin: 0px;
+}
+.modal .grid .row .span50 {
+  width: 50px;
+}
+.modal .grid .row fieldset[name="expressMixedMode"] {
+  margin-left: 4px;
+}
+.modal .grid .row fieldset[name="shipRequirement"] {
+  padding-bottom: 4px;
+}
+.modal .grid .days input[type="checkbox"] {
+  margin: -3px 5px 0px 8px;
+}
+.modal .grid .day {
+  text-align: center;
+  font-size: 35px;
+  color: #999999;
+}
+.modal .grid .weekday {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+}
+.modal .label {
+  background: none;
+  font-weight: bold !important;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.modal table td {
+  padding: 3px 18px;
+}
+.modal .matrixTable table {
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 750px;
+  border: 1px solid #bfbfbf;
+}
+.modal .matrixTable .rowUp {
+  position: absolute;
+  left: 870px;
+  top: 170px;
+  cursor: pointer;
+}
+.modal .matrixTable .rowDown {
+  position: absolute;
+  left: 870px;
+  top: 280px;
+  cursor: pointer;
+}
+.modal .matrixTable button {
+  width: 120px;
+  height: 50px;
+  position: relative;
+  border: 1px solid darkgray;
+  font-size: 20px;
+}
+.modal .matrixTable .delete {
+  margin-left: 230px;
+}
+.modal .matrixTable .save {
+  margin-left: 100px;
+}
+.modal .matrixTable .selected {
+  background-color: blue;
+}
+.modal .editDay {
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.modal .editDay tbody {
+  display: block;
+  height: 400px;
+  width: 635px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal .editDay tbody tr {
+  width: 620px;
+  display: table-row;
+}
+.modal .editDay tbody tr td:nth-child(1) {
+  width: 190px;
+}
+.modal .editDay tbody tr td:nth-child(2) {
+  width: 100px;
+}
+.modal .editDay tbody tr td:nth-child(n+3) {
+  width: 70px;
+}
+.modal .editDay thead {
+  display: block;
+  width: 620;
+}
+.modal .editDay thead tr {
+  width: 620px;
+  display: table-row;
+  text-align: left;
+}
+.modal .editDay thead tr th:nth-child(1) {
+  width: 180px;
+  text-align: center;
+}
+.modal .editDay thead tr th:nth-child(2) {
+  width: 90px;
+}
+.modal .editDay thead tr th:nth-child(3) {
+  width: 60px;
+}
+.modal .editDay thead tr th:nth-child(n+4) {
+  width: 70px;
+}
+.modal .hideBlock {
+  visibility: hidden;
+}
+.modal .unDisplay {
+  display: none;
+}
+.modal .editUser .days input {
+  width: 20px;
+  height: 20px;
+}
+.modal .equipmentTable h2 {
+  margin-left: 40px;
+}
+.modal .equipmentTable table {
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 800px;
+  border: 1px solid #bfbfbf;
+}
+.modal .equipmentTable button {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  border: 1px solid darkgray;
+  font-size: 20px;
+}
+.modal .equipmentTable .delete {
+  margin-left: 180px;
+}
+.modal .equipmentTable .disable {
+  margin-left: 30px;
+}
+.modal .equipmentTable .save {
+  margin-left: 30px;
+}
+.modal .equipmentTable .selected {
+  background-color: blue;
+}
+.modal .equipmentTable tbody {
+  display: block;
+  height: 250px;
+  width: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal .equipmentTable tbody tr {
+  width: 800px;
+  display: table-row;
+}
+.modal .equipmentTable tbody tr td:nth-child(1) {
+  width: 40px;
+}
+.modal .equipmentTable tbody tr td:nth-child(n+2) {
+  width: 190px;
+}
+.modal .equipmentTable thead {
+  display: block;
+  width: 800;
+}
+.modal .equipmentTable thead tr {
+  width: 800px;
+  display: table-row;
+  text-align: left;
+}
+.modal .equipmentTable thead tr th:nth-child(1) {
+  width: 40px;
+}
+.modal .equipmentTable thead tr th:nth-child(n+2) {
+  width: 190px;
+}
+.modal .transferTable .fence {
+  position: absolute;
+  width: 800px;
+  height: 288px;
+  top: 192px;
+  left: 52px;
+  background-color: #a9a9a9;
+  opacity: 0.5;
+}
+.modal .transferTable h3 {
+  margin-bottom: 20px;
+  font-weight: 1000;
+}
+.modal .transferTable .tRow1 {
+  margin-left: 50px;
+}
+.modal .transferTable .tRow1 .span4,
+.modal .transferTable .tRow1 .span2,
+.modal .transferTable .tRow1 .span1 {
+  font-weight: 700;
+}
+.modal .transferTable .tRow3 {
+  font-size: 18px;
+  margin-left: 155px;
+}
+.modal .transferTable .tRow3 .span3 {
+  font-weight: 700;
+}
+.modal .transferTable table {
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 800px;
+  border: 1px solid #bfbfbf;
+}
+.modal .transferTable button {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  border: 1px solid darkgray;
+  font-size: 20px;
+}
+.modal .transferTable .delete {
+  margin-left: 170px;
+  margin-top: 20px;
+}
+.modal .transferTable .save {
+  margin-left: 170px;
+  margin-top: 20px;
+}
+.modal .transferTable .selected {
+  background-color: blue;
+}
+.modal .transferTable input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.modal .transferTable input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+.modal .transferTable tbody {
+  display: block;
+  height: 250px;
+  width: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal .transferTable tbody tr {
+  width: 800px;
+  display: table-row;
+}
+.modal .transferTable tbody tr td:nth-child(1) {
+  width: 40px;
+}
+.modal .transferTable tbody tr td:nth-child(n+2) {
+  width: 190px;
+}
+.modal .transferTable thead {
+  display: block;
+  width: 800;
+}
+.modal .transferTable thead tr {
+  width: 800px;
+  display: table-row;
+  text-align: left;
+}
+.modal .transferTable thead tr th:nth-child(1) {
+  width: 40px;
+}
+.modal .transferTable thead tr th:nth-child(n+2) {
+  width: 190px;
+}
+.modal .callCancelForm h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.modal .callCancelForm .tRow1 {
+  margin-left: 50px;
+}
+.modal .callCancelForm .tRow1 .span4,
+.modal .callCancelForm .tRow1 .span2,
+.modal .callCancelForm .tRow1 .span1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.modal .callCancelForm .tRow2 {
+  font-size: 17px;
+  margin-left: 50px;
+}
+.modal .callCancelForm .tRow3 {
+  font-size: 19px;
+  margin-left: 70px;
+}
+.modal .callCancelForm .tRow4 {
+  font-size: 17px;
+}
+.modal .callCancelForm table {
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 800px;
+  border: 1px solid #bfbfbf;
+}
+.modal .callCancelForm button {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  border: 1px solid darkgray;
+  font-size: 20px;
+}
+.modal .callCancelForm .delete {
+  margin-left: 170px;
+  margin-top: 20px;
+}
+.modal .callCancelForm .save {
+  margin-left: 170px;
+  margin-top: 20px;
+}
+.modal .callCancelForm .selected {
+  background-color: blue;
+}
+.modal .callCancelForm input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.modal .callCancelForm input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+.modal .callCancelForm tbody {
+  display: block;
+  height: 250px;
+  width: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal .callCancelForm tbody tr {
+  width: 800px;
+  display: table-row;
+}
+.modal .callCancelForm tbody tr td:nth-child(1) {
+  width: 40px;
+}
+.modal .callCancelForm tbody tr td:nth-child(n+2) {
+  width: 190px;
+}
+.modal .callCancelForm thead {
+  display: block;
+  width: 800;
+}
+.modal .callCancelForm thead tr {
+  width: 800px;
+  display: table-row;
+  text-align: left;
+}
+.modal .callCancelForm thead tr th:nth-child(1) {
+  width: 40px;
+}
+.modal .callCancelForm thead tr th:nth-child(n+2) {
+  width: 190px;
+}
+.modal .buttonStaticRow {
+  height: 70px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 610px;
+  padding-top: 8px;
+  background-color: #ffffff;
+  border-top: 1px #e9e9e9 solid;
+}
+.editDayScroll .margin30 {
+  margin-left: 30px !important;
+}
+#checkEquipment {
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+  margin-top: 50px;
+}
+#checkEquipment .input {
+  margin: 30px 0px 30px 0px;
+}
+#checkEquipment .input h3 {
+  line-height: 30px;
+}
+#checkEquipment .input input.input-section {
+  width: 43px;
+  margin-right: 9px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  color: #363636;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #b8b8b8;
+  padding: 7px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#checkEquipment .input input.input-section:nth-child(3) {
+  margin-right: 0px;
+}
+#checkEquipment .form-line {
+  clear: both;
+  position: relative;
+  display: block;
+}
+#errorModal .caption {
+  background-color: gray;
+}
+.hideBlock {
+  visibility: hidden;
+}
+.fence {
+  position: absolute;
+  background-color: #a9a9a9;
+  opacity: 0.5;
+}
+.empty-table-Transfer {
+  position: absolute;
+  left: 200px;
+  margin-top: 20px;
+  font-size: 25px;
+  color: #ccc;
+}
+.printing_form {
+  width: 100%;
+  margin-top: 400px;
+}
+.printing_form .printingPage {
+  padding-top: 1.2cm;
+}
+.printing_form .printingPage:nth-child(1) {
+  margin-left: 1.1cm;
+}
+.printing_form .printingPage:nth-child(n+2) {
+  margin-left: 0.6cm;
+}
+.printing_form .addressRow {
+  height: 140px;
+}
+.printing_form .remarks {
+  width: 17.9cm;
+  padding: 5px;
+  line-height: 16px;
+  font-size: 1.3rem;
+}
+.printing_form .remarksDisable {
+  width: 17.85cm;
+}
+.printing_form .total_box {
+  float: right;
+  width: 30%;
+  padding: 5px;
+}
+.printing_form .item_list table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.printing_form .item_list table .smallSize {
+  font-size: 12px;
+  line-height: 16px;
+}
+.printing_form .item_list table thead th {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background: #ececec;
+  padding: 5px;
+  border-right: 1px solid #000000;
+}
+.printing_form .item_list table thead th:last-child {
+  border-right: 0px solid #000000;
+}
+.printing_form .item_list table td {
+  border-right: 1px solid #000000;
+}
+.printing_form .item_list table td:last-child {
+  border-right: 0px solid #000000;
+}
+.printing_form .bottom_remarks {
+  border-top: 1px solid #000000;
+  height: 50px;
+  padding: 13px 10px 0px 10px;
+  font-size: 1.3rem;
+}
+.printing_form .bottom_remarks div:nth-child(1) {
+  float: left;
+}
+.printing_form .bottom_remarks div:nth-child(2) {
+  float: right;
+}
+.printing_form .border-left {
+  border-left: 1px solid #000000;
+}
+.printing_form .border-right {
+  border-right: 1px solid #000000;
+}
+.printing_form .border-bottom {
+  border-bottom: 1px solid #000000;
+}
+.printing_form .border-left-white {
+  border-left: 1px solid #fff;
+}
+.printing_form .border-right-white {
+  border-right: 1px solid #fff;
+}
+.printing_form .border-left-white {
+  border-bottom: 1px solid #fff;
+}
+.printing_form .item_list_frame {
+  border-collapse: collapse;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.printing_form .item_list_frame table {
+  width: 100%;
+  background: transparent;
+  border-collapse: collapse;
+}
+.printing_form .item_list_frame table thead th:nth-child(2) {
+  padding: 0px 10px;
+}
+.printing_form .item_list_frame table td {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.printing_form .ship_via {
+  width: 100%;
+  padding: 5px;
+  line-height: 16px;
+  font-size: 1.3rem;
+  border-top: 1px solid black;
+}
+.printing_form .packing_list {
+  border: 1px solid #000000;
+  width: 7cm;
+  height: 3.5cm;
+  font-size: 11px;
+  line-height: 16px;
+}
+.printing_form .packing_list table {
+  border-collapse: collapse;
+  width: 100%;
+  background: transparent;
+}
+.printing_form .packing_list table td {
+  padding: 2px 0px 2px 5px;
+}
+.printing_form .packing_list table thead td {
+  border-bottom: 1px solid #000000;
+  background: #ececec;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px;
+}
+.printing_form #logo {
+  background: url('../imgs/custom/company_logo.png');
+  width: 300px;
+  height: 36px;
+}
+.printing_form .branchIdBox {
+  padding: 20px;
+}
+.printing_form .branchIdBox div {
+  border: 1px solid #000000;
+  padding: 10px;
+  width: 125px;
+}
+.printing_form .companyName {
+  text-align: left;
+}
+.printing_form .companyName span:nth-child(1) {
+  font-size: 40px;
+  font-family: "Times New Roman";
+  font-style: italic;
+}
+.printing_form .companyName span:nth-child(2) {
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Times New Roman";
+}
+.pickupTable div[name="newRow"] {
+  font-size: 16px;
+  margin-left: 0px !important;
+}
+.pickupTable div[name="slash"] {
+  font-size: 16px;
+}
+.pickupTable input[type="text"] {
+  font-size: 16px;
+  width: 70px !important;
+}
+.pickupTable .table {
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+}
+.pickupTable .table thead {
+  background-color: rgba(128, 128, 128, 0.5);
+  display: block;
+  width: 225px;
+}
+.pickupTable .table thead tr th:nth-child(1) {
+  width: 40px;
+}
+.pickupTable .table thead tr th:nth-child(n+2) {
+  width: 93px;
+}
+.pickupTable .table tbody {
+  display: block;
+  width: 225px;
+  overflow-y: auto;
+  max-height: 87px;
+}
+.pickupTable .table tbody tr td:nth-child(1) {
+  width: 40px;
+}
+.pickupTable .table tbody tr td:nth-child(n+2) {
+  width: 92px;
+}
+.pickupTable .table td {
+  vertical-align: middle;
+  line-height: 10px;
+}
+.pickupTable .icons {
+  padding-top: 10px;
+}
+.pickupTable .icons .icon-file-3 {
+  font-size: 30px;
+  margin-left: 60px;
+}
+.pickupTable .icons .icon-remove {
+  font-size: 25px;
+  margin-left: 65px;
+}
+.fillRateTable {
+  width: 322px !important;
+}
+.fillRateTable div[name="newRow"] {
+  font-size: 16px;
+  margin-left: 0px !important;
+}
+.fillRateTable div[name="slash"] {
+  font-size: 16px;
+}
+.fillRateTable input[type="text"] {
+  font-size: 16px;
+  width: 70px !important;
+}
+.fillRateTable .table {
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+}
+.fillRateTable .table thead {
+  background-color: rgba(128, 128, 128, 0.5);
+  display: block;
+  width: 320px;
+}
+.fillRateTable .table thead tr th {
+  padding: 0px 0px 0px 8px;
+  vertical-align: middle;
+}
+.fillRateTable .table thead tr th:nth-child(1) {
+  width: 40px;
+}
+.fillRateTable .table thead tr th:nth-child(n+2) {
+  width: 93px;
+}
+.fillRateTable .table tbody {
+  display: block;
+  width: 320px;
+  overflow-y: auto;
+  max-height: 110px;
+}
+.fillRateTable .table tbody tr td:nth-child(1) {
+  width: 40px;
+}
+.fillRateTable .table tbody tr td:nth-child(n+2) {
+  width: 93px;
+}
+.fillRateTable .table td {
+  vertical-align: middle;
+  line-height: 10px;
+}
+.fillRateTable .icons {
+  padding-top: 10px;
+}
+.fillRateTable .icons .icon-file-3 {
+  font-size: 30px;
+  margin-left: 90px;
+}
+.fillRateTable .icons .icon-remove {
+  font-size: 25px;
+  margin-left: 90px;
+}
+.tableWidget thead tr {
+  display: inline-block;
+}
+.tableWidget thead tr th {
+  font-size: 16px !important;
+  cursor: pointer;
+  text-align: left;
+}
+.tableWidget .table-wraper table {
+  margin-top: -36px !important;
+}
+.tableWidget .empty-table {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin-top: -10px;
+  margin-left: -10px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 90px;
+  color: #ccc;
+}

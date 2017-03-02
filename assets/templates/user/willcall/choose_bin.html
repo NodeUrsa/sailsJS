@@ -1,0 +1,9 @@
+<div id="button_binLocation" class="button-set" data-role="button-group">
+	<button data-id="" class="active">N/A</button>
+	<% var i;
+	for(i = 1; i <= binCount; i++) {
+	%>
+    <button data-id="<%=i%>"><%=i%></button>
+    <% } %>
+</div>
+<button id="button_location_apply">Apply</button>

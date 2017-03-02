@@ -1,0 +1,95 @@
+<div class="header small">
+	<div class="row">
+		<div class="column">
+			<div><b>Order#</b> <%= model.orderNumber%></div>
+			<div><b>Delivery#</b> <%= model.deliveryNum%></div>
+			<!--div><b>Add-on:</b></div-->
+		</div>
+		<div class="column">
+			<div><b>Ship to:</b> <%=model.customerNumber%></div>
+            <div>
+            <% var str = model.customerName;
+					if(str && str.length>30) {
+						var str = str.substr(0,27)+'...';
+					}
+				%>
+				<%= str%>
+            </div>
+			<div>
+				<% var str = model.shipToAddress1 || model.shipToAddress2 || model.shipToAddress3 || model.shipToAddress4;
+					if(str && str.length>30) {
+						var new_str = str.substr(0,27)+'...';
+					}
+				%>
+				<%= new_str%>
+				</br>
+				<%=model.shipToCity%><%=(model.shipToState)? ', '+model.shipToState:''%><%=(model.shipToZip)? ', '+model.shipToZip:''%>
+			</div>
+		</div>
+		<div class="column">
+			<div><b>Orig Ship via:</b>
+			<% var str = model.shipVia;
+					if(str && str.length > 49) {
+						var str = str.substr(0,46)+'...';
+					}
+				%>
+				<%= str%>
+			</div>
+			<div><b>New Ship via:</b>
+			<% var str = model.updatedShipvia;
+					if(str && str.length > 49) {
+						var str = str.substr(0,46)+'...';
+					}
+				%>
+				<%= str%>
+			</div>
+		</div>
+		<div class="column">
+			<div><b>Ordered:</b></div>
+			<div><%= moment(model.orderDate).format('MM/DD/YY')%></div>
+			<div><b>Due:</b></div>
+			<div><%= moment(model.dueDate).format('MM/DD/YY')%></div>
+		</div>
+	</div>
+</div>
+<table class="table">
+	<thead>
+		<tr>
+		<%if(type == 1){%>
+
+			<th>Genera P/N</th>
+			
+			<th>Alloc</th>
+			<!-- <th>Pick</th> -->
+			<th>Canc</th>
+			<th>Pack</th>
+			
+			<%}else if(type == 2){%>
+			<th>LN</th>
+			<th>Genera P/N</th>
+			<th>Plt</th>
+			<th>Box</th>
+			<th>Alloc</th>
+			<th>Picked</th>
+			<th>Cancelled</th>
+			<th>Packed</th>
+			<%}else if(type == 3){%>
+			<th>LN</th>
+			<th>Genera P/N</th>
+			<th>Plt</th>
+			<th>Box</th>
+			<th>Alloc</th>
+			<th>Picked</th>
+			<th>Cancelled</th>
+			<th>Packed</th>
+			<%}%>
+		</tr>
+	</thead>
+</table>
+<div class="table-wraper nano">
+	<div class="nano-content">
+		<table class="table striped hovered">
+			<tbody></tbody>
+		</table>
+	</div>
+</div>
